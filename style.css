@@ -1,0 +1,212 @@
+/* general format */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 600;
+}
+
+section {
+    min-height: 400px;
+}
+
+.section2 {
+    margin-top: 50px;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: initial;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+/*nav bar*/
+nav {
+    border: 1px;
+    display: flex;
+    background-color: beige;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    opacity: 100%;
+}
+
+.navlink {
+    background-color: rgb(235, 235, 190);
+    color: rgb(38, 3, 83);
+    padding: 5px;
+    margin: 10px;
+    border: 1px yellow solid;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    background-color: rgb(243, 243, 55);
+}
+
+/*bio and headshot section*/
+.home {
+    display: flex;
+    top: 50px;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.bio {
+    width: 60%;
+    margin-right: 50px;
+}
+
+.headshot {
+    width: 30%;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.headshotpic{
+    min-width: 306px;
+}
+
+.play-title {
+    font-style: oblique;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+/* all the formatting for all the plays! */
+.playbox {
+    display: flex;
+    align-items: center;
+    background-color: rgb(196, 196, 219);
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.play {
+    border: 2px solid rgb(80, 80, 95);
+    width: 20%;
+    padding: 5px;
+    margin: 10px ;
+    border-radius: 10px;
+    background-color: beige;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*these are the little coloured rectangles you wanted as the covers*/
+.cover {
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(80, 80, 95);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover:hover {
+    background-color: aqua;
+    color: black;
+    border: yellow 2px solid;
+}
+
+/*and these are all the colours*/
+.blue {
+    background-color: blue;
+    color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+    color: yellow;
+}
+
+.green {
+    background-color: green;
+    color: green;
+}
+
+.black {
+    background-color: black;
+
+}
+
+.red {
+    background-color: red;
+    color: red;
+}
+
+/*ALL THE PLAY DESCRIPTION FORMATTING SO THEY HIDE/SHOW*/
+.play-desc {
+    visibility: hidden;
+    width: auto;
+    height: 50%;
+    border: 3px black solid;
+    position: fixed;
+    top:25%;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 20px;
+}
+/*close button for play description*/
+.close {
+    text-decoration: wavy;
+    border: 2px grey solid;
+    border-radius: 3px;
+    background-color: grey;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    font-size: medium;
+}
+
+.close:hover{
+    color: red;
+    background-color: aliceblue;
+    border-color: red;
+}
+
+/*special formatting for the year under the play title in the description*/
+.year {
+    font-style: italic;
+    opacity: 80%;
+}
+
+/*me trying to make a thing that hides the rest of the page*/
+.fade-away{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    opacity: 40%;
+    visibility: hidden;
+    position: fixed;
+}

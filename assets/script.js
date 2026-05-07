@@ -2,34 +2,47 @@
 let currentPlay = ""
 
 //array of play objects
+//(1)fireproof, (2)wolf, (3)corps, (4)care/take, (5)becca & the blob, (6)exits
 const plays = [
     {
         title: "exits",
+        title2:"Exits",
+        order: 6,
         description:
             "EXITS DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
     },
     {
         title: "wolf",
+        title2:"Wolf",
+        order: 2,
         description:
             "WOLF DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
     },
     {
         title: "corps",
+        title2:"Corps",
+        order:3,
         description:
             "CORPS DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
     },
     {
         title: "fireproof",
+        title2:"Fireproof",
+        order: 1,
         description:
             "FIREPROOF DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
     },
     {
         title: "beccablob",
+        title2:"Becca and the Blob",
+        order: 5,
         description:
             "BECCABLOB DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
     },
     {
         title: "caretake",
+        title2:"Care/Take",
+        order: 4,
         description:
             "CARE/TAKE DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
     }
@@ -58,13 +71,32 @@ function showDesc(x) {
     //console.log(filteredData),
 
     //set description variable to the play desription (and converts that to string)
-    desc = filteredData.description.toString()
-
+    desc = filteredData.description.toString();
+;
     //sets currentPlay to the right element (so that we can hide it easier in the next function)
     currentPlay = document.getElementById(playId + "-desc");
 
+    // const hoveredPlay = document.getElementById(playId);
+    // const top = toString(hoveredPlay.offsetTop)
+    // const left = toString(hoveredPlay.offsetLeft)
+    // const height = toString(hoveredPlay.offsetHeight)
+    // const width = toString(hoveredPlay.offsetWidth)
+
+    // currentPlay.style.position = "absolute";
+    // currentPlay.style.top = top;
+    // currentPlay.style.left = left;
+    // currentPlay.style.height = height;
+    // currentPlay.style.width = width
+
     //change the descirption element to the description we got from filtreedData
     currentPlay.innerHTML = desc;
+
+//     <div id="test">
+//   <p>Click the button to get offsetTop for the test div.</p>
+//   <p><button onclick="myFunction()">Try it</button></p>
+//   <p>offsetTop is: <span id="demo"></span></p>
+// </div>
+
 
     //adds a new class
     currentPlay.className += " open-desc"

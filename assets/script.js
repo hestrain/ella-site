@@ -10,6 +10,7 @@ const plays = [
         order: 6,
         description:
             "EXITS DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
+            pic:"./assets/photos/exits.jpg"
     },
     {
         title: "wolf",
@@ -17,6 +18,7 @@ const plays = [
         order: 2,
         description:
             "WOLF DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
+            pic:"./assets/photos/Wolf2.jpg"
     },
     {
         title: "corps",
@@ -24,6 +26,7 @@ const plays = [
         order:3,
         description:
             "CORPS DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
+            pic:"./assets/photos/corps.jpg"
     },
     {
         title: "fireproof",
@@ -31,6 +34,7 @@ const plays = [
         order: 1,
         description:
             "FIREPROOF DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
+            pic:"./assets/photos/fireproof.jpg"
     },
     {
         title: "beccablob",
@@ -38,6 +42,7 @@ const plays = [
         order: 5,
         description:
             "BECCABLOB DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
+            pic:"./assets/photos/beccablob.jpg"
     },
     {
         title: "caretake",
@@ -45,6 +50,7 @@ const plays = [
         order: 4,
         description:
             "CARE/TAKE DESCRIPTION Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis nulla iste aspernatur repellendus exercitationem, eius at maiores nisi, perferendis quisquam tempore aliquid voluptatum labore aliquam libero dignissimos ducimus numquam.",
+            pic:"./assets/photos/caretake.jpg"
     }
 ];
 
@@ -76,26 +82,8 @@ function showDesc(x) {
     //sets currentPlay to the right element (so that we can hide it easier in the next function)
     currentPlay = document.getElementById(playId + "-desc");
 
-    // const hoveredPlay = document.getElementById(playId);
-    // const top = toString(hoveredPlay.offsetTop)
-    // const left = toString(hoveredPlay.offsetLeft)
-    // const height = toString(hoveredPlay.offsetHeight)
-    // const width = toString(hoveredPlay.offsetWidth)
-
-    // currentPlay.style.position = "absolute";
-    // currentPlay.style.top = top;
-    // currentPlay.style.left = left;
-    // currentPlay.style.height = height;
-    // currentPlay.style.width = width
-
     //change the descirption element to the description we got from filtreedData
     currentPlay.innerHTML = desc;
-
-//     <div id="test">
-//   <p>Click the button to get offsetTop for the test div.</p>
-//   <p><button onclick="myFunction()">Try it</button></p>
-//   <p>offsetTop is: <span id="demo"></span></p>
-// </div>
 
 
     //adds a new class
@@ -114,3 +102,25 @@ function hideDesc() {
     //log when this action is complete
     console.log("gone");
 }
+
+function createListWithTemplate(){
+    let playsDiv = document.getElementsByClassName("playbox")
+    plays.forEach(play => {
+        const playCard = document.createElement("div").className("play").id(title)
+        const playTitle = document.createElement("h4").innerHTML(title2)
+        const coverDiv = document.createElement("div").className("cover " +title).onmouseenter("showDesc(this)").onmouseleave("hideDesc()").addAttribute("play-id", title)
+        const coverImg = document.createElement("img").className("sample-img smaller-img").addAttribute("src",play.pic)
+        const descDiv = document.createElement("div")
+    });
+}
+
+<div class="play" id="exits">
+        <!--Exits-->
+        <h4>Exits</h4>
+        <div class="cover exits sample-img smaller-img" onmouseenter="showDesc(this)" onmouseleave="hideDesc()"
+          play-id="exits">
+          <div class="play-desc" id="exits-desc">
+            <!--THIS IS WHERE THE EXITS DESCRIPTION WILL MAGICALLY APPEAR-->
+          </div>
+        </div>
+      </div>

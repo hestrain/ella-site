@@ -1,0 +1,19 @@
+{
+  "name": "ella-site",
+  "version": "1.0.0",
+  "description": "Portfolio website for playwright Ella Kohlmann",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/hestrain/ella-site.git"
+  },
+  "author": "HeatherEllen Strain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hestrain/ella-site/issues"
+  },
+  "homepage": "https://github.com/hestrain/ella-site#readme"
+}

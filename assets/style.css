@@ -1,4 +1,13 @@
 /* general format */
+:root {
+     --primary-bg-color: green;
+     --offwhite: #fffbf5;
+     --yello: #fff0cd;
+     ---bloo: #d3edf1;
+     --sand: #d3b29e;
+
+ }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -41,7 +50,7 @@ footer {
 nav {
     border: 1px;
     display: flex;
-    background-color: beige;
+    background-color: var(--sand);
     justify-content: center;
     position: fixed;
     top: 0px;
@@ -50,16 +59,15 @@ nav {
 }
 
 .navlink {
-    background-color: rgb(235, 235, 190);
-    color: rgb(38, 3, 83);
+    color: black;
     padding: 5px;
     margin: 10px;
-    border: 1px yellow solid;
+    border: 1px var(--yello) solid;
     text-decoration: none;
 }
 
 .navlink:hover {
-    background-color: rgb(243, 243, 55);
+    background-color: var(---bloo);
 }
 
 /*bio and headshot section*/
@@ -103,7 +111,7 @@ nav {
 .playbox {
     display: flex;
     align-items: center;
-    background-color: rgb(196, 196, 219);
+    background-color: var(--yello);
     justify-content: center;
     width: 100%;
     margin-top: 20px;
@@ -111,11 +119,11 @@ nav {
 }
 
 .play {
-    border: 2px solid rgb(80, 80, 95);
+    border: 2px solid var(---bloo);
     width: 35%;
     margin: 10px;
     border-radius: 10px;
-    background-color: beige;
+    background-color: var(--sand);
     min-width: 351px;
     display: flex;
     justify-content: center;
@@ -136,7 +144,7 @@ nav {
 /* for all images */
 .sample-img {
     display: flex;
-    background-color: #fff;
+    background-color: var(--sand);
     height: 300px;
     width: 300px;
     display: flex;
@@ -147,13 +155,13 @@ nav {
 
 .play:hover {
     box-shadow: black 2px 10px 10px;
-    background-color: #b4ccce;
+    background-color: var(---bloo);
     opacity: 70%;
 }
 
 .play-desc {
     color: black;
-    background-color: #b4ccce;
+    background-color: var(---bloo);
     position: absolute;
     margin: 2px;
     padding: 2px;
@@ -172,7 +180,7 @@ nav {
 
 .heather{
     font-size: x-small;
-    color: blue;
+    color: var(--sand);
     font-variant: small-caps;
     width: fit-content;
 }

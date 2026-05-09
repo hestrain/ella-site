@@ -31,6 +31,7 @@ section {
     min-height: fit-content;
     /* background-color: var(--offwhite); */
     width: 100%;
+    left: 0px;
     margin: 0px;
     height: 100%;
 }
@@ -63,8 +64,9 @@ nav {
     justify-content: center;
     position: fixed;
     top: 0px;
-    width: 100%;
+    width: 110%;
     opacity: 100%;
+        left: -20px;
 }
 
 .navlink {
@@ -90,6 +92,7 @@ nav {
     flex-wrap: wrap-reverse;
     background-color: var(--offwhite);
     width: 100%;
+    left: -20px;
 }
 
 .bio {

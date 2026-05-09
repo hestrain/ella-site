@@ -29,9 +29,10 @@ h4 {
 
 section {
     min-height: fit-content;
-    background-color: var(--offwhite);
+    /* background-color: var(--offwhite); */
     width: 100%;
     margin: 0px;
+    height: 100%;
 }
 
 .section2 {
@@ -52,7 +53,6 @@ footer {
 
 /*nav bar*/
 nav {
-    border: 1px;
     display: flex;
     background-color: var(--yello);
     justify-content: center;
@@ -231,7 +231,43 @@ nav {
     height: 400px;
     text-align: center;
 }
+.email{
+    margin-left: 25px;
+    color: black;
+    text-decoration: none;
+}
 
+.contactInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.socials-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.a-social{
+    display: flex;
+    flex-direction: column;
+}
+.email:hover{
+    background-color: var(---bloo);
+    text-decoration: solid black 1px;
+
+}
+.social-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icon:hover{
+    box-shadow: var(---bloo) 2px 5px 5px;}
+.socials-text{
+    font-size: x-small;
+}
 
 /* mobile formatting */
 @media (max-width: 700px) {

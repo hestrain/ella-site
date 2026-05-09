@@ -2,6 +2,9 @@
 //(1)fireproof, (2)wolf, (3)corps, (97)care/take, (98)becca & the blob, (99)exits
 
 import unsortedPlays from "./ellaplays.json" with { type: "json" };
+import contacts from "./contact.json" with { type: "json" };
+//console.log(contact);
+
 let selectedPlay = ""
 localStorage.setItem("currentPlay", selectedPlay)
 
@@ -10,17 +13,69 @@ localStorage.setItem("currentPlay", selectedPlay)
 
 //make part of the page where the plays go
 const playsDiv = document.getElementById("playbox");
-console.log(playsDiv);
+//console.log(playsDiv);
+
+function makeContacts(){
+  const contactSection = document.getElementById("contactInfo")
+  console.log("making contacts");
+    
+    const socials = document.createElement("div");
+    socials.setAttribute("class", "socials-box");
+  
+
+  contacts.forEach(contact => {
+
+    //console.log(contact);
+
+    
+//email
+    if(contact.title === "email") {
+
+      const emailButton = document.createElement("a")
+      emailButton.innerHTML= contact.linktext
+      emailButton.setAttribute("class","email")
+      emailButton.href = contact.url
+    
+      contactSection.append(emailButton);
+    }
+    //socials
+      else {
+        const oneSocial = document.createElement("div")
+        oneSocial.setAttribute("class","a-social")
+        //console.log(contact.title);
+        
+        const icon = document.createElement("img")
+        const icona = document.createElement("a")
+        icon.src = contact.icon
+        // icon.setAttribute("src", contact.icon)
+        icon.alt = contact.title
+        icon.setAttribute("class", "social-icon")
+        icona.href = contact.url
+        icona.append(icon)
+  
+        oneSocial.append(icona)
+        socials.append(oneSocial)
+      }
+  
+      contactSection.append(socials)
+      
+  });
+
+  }
+
+
+makeContacts()
 
 //function that generates the HTML for the plays
 function populatePlays() {
   //sort the plays by the order#
   const plays = unsortedPlays.sort((a, b) => a.order - b.order);
-
+  console.log("making plays");
+  
   //for each play in the array....
   plays.forEach((play) => {
     //log the title of the play
-    console.log(play.title + "'s card is being made");
+    //console.log(play.title + "'s card is being made");
 
     //create the card element
     const playCard = document.createElement("div");
@@ -68,7 +123,7 @@ function populatePlays() {
       //location.href("/" + play.title);
       console.log("clicked to go to " +play.title2+ "'s page");
       selectedPlay = play;
-      console.log(selectedPlay.title2);
+      //console.log(selectedPlay.title2);
       localStorage.setItem("currentPlay", selectedPlay);
       // const popup = document.createElement("div")
       // popup.setAttribute("class", "popup")
@@ -95,7 +150,7 @@ function populatePlays() {
       descDiv.style.visibility = "visible";
       fullDeets.style.visibility = "visible"
       //log to check
-      console.log("hovered on " + play.title2);
+      //console.log("hovered on " + play.title2);
     });
 
     //when the mouse leaves the playCard
@@ -106,7 +161,7 @@ function populatePlays() {
       descDiv.style.visibility = "hidden";
       fullDeets.style.visibility = "hidden"
       //log to check
-      console.log("mouse left " + play.title2);
+      //console.log("mouse left " + play.title2);
     });
   });
 }

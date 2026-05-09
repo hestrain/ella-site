@@ -1,0 +1,21 @@
+[
+
+  {
+    "title":"email",
+    "url":"mailto:ellakohlmann@gmail.com",
+    "linktext":"ellakohlmann@gmail.com",
+    "icon":"na"
+  },
+  {
+    "title":"instagram",
+    "url":"https://www.instagram.com/ellaa.k",
+    "linktext":"ellaa.k",
+    "icon":"./assets/photos/insta-bw.png"
+  },
+  {
+    "title":"linkedIn",
+    "url":"https://ca.linkedin.com/in/ellakohlmann",
+    "linktext":"linkedin",
+    "icon":"./assets/photos/linkedin-bw2.png"
+  }
+]

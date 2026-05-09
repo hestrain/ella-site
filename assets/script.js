@@ -1,171 +1,12 @@
-//array of play objects
+//import json array of play objects
 //(1)fireproof, (2)wolf, (3)corps, (97)care/take, (98)becca & the blob, (99)exits
 
+import unsortedPlays from "./ellaplays.json" with { type: "json" };
+let selectedPlay = ""
+localStorage.setItem("currentPlay", selectedPlay)
 
-//currently this is the giant array of info. I'd prefer if it went somewhere else lol. like a JSON file!!! 
-const unsortedPlays = [
-  {
-    title: "exits",
-    title2: "Exits",
-    order: 99,
-    italics: "What if people don't like me for good reasons?",
-    description: "Rachel has run away from home with nothing but her school bag and a well-read copy of Moby Dick. Anxious, closeted, and being followed around by an apparition of her younger self that only she can see, Rachel is at the end of her rope. But when she meets Sam, an older girl doing graffiti in an alleyway downtown, she's convinced she's found her saviour. The only play about a 17-year-old lesbian who's obsessed with a 625-page novel about whaling, Exits is a comedic, dramatic, nerdy, whimsical exploration of queer identity and growing up.",
-    pic: "./assets/photos/exits2.jpg",
-    castSize: "3F",
-    age:"TYA 14+",
-    ogDev: "Developed as part of Playwrights Workshop Montreal Young Creators Unit, Dramaturgy by Jesse Stong",
-    devHist: [
-      {
-        what:"Production",
-        where:"Montreal Fringe Festival",
-        when:"2019",
-        devTeam:"Directed by Madison Jolliffe"
-      },
-      {
-        what:"Staged Reading",
-        where:"Queer Reading Series, Centaur Theatre",
-        when:"2019",
-        devTeam:"Directed by Sarah Segal Lazare"
-      },
-      {
-          what: "Workshop",
-          when: "2018",
-          where: "Young Creators Unit, Playwrights Workshop Montreal",
-          devTeam: "Directed by Sarah Segal-Lazar, dramaturgy by Jesse Stong"
-      }
-    ],
-  Press: [
-      {
-          url:"https://scripteditty.wordpress.com/2019/05/31/fringeterview-1-ella-kohlmann-and-madie-jolliffe-of-exits/">
-          text:"Queer Romance is at the Heart of Fringe Play Exits"
-      },
-      {
-          url:"https://thelinknewspaper.ca/article/queer-romance-is-at-the-heart-of-fringe-play-exits"
-          text:"Fringeterview #1: Ella Kohlmann and Madie Jolliffe of Exits"
-      },
-      {
-          url:"https:/web.archive.org/web/20190920021153/https:/montrealtheatrehub.com/2019/06/14/fringe-review-c-a-s-t-s-exits-is-nerdy-timeless-and-utterly-enjoyable",
-          text:"Fringe C.A.S.T.’s “Exits” is Nerdy, Timeless and Utterly Enjoyable"
-      },
-      ]
-  },
-  {
-    title: "wolf",
-    title2: "Wolf",
-    order: 2,
-      quote: "Iris wakes up in the forest with blood in her mouth and a feeling in her stomach she cannot name.",
-      
-    description: "An aspiring painter, Iris has spent the past four years stuck in her small hometown working full-time at a manufacturing facility to make ends meet. When her ex-girlfriend, Charlotte, returns to town after graduating from the art school that Iris couldn't afford to attend, Iris begins to feel an insatiable hunger for something she cannot name. Charlotte wants to try and rekindle things with Iris, but Iris is much more interested in the famous painter that Charlotte is assisting while he does a residency in town— and who recognizes the hunger in Iris that that she is increasingly unable to hold back.",
-    pic: "./assets/photos/Wolf2.jpg",
-      castSize:"5 (3F/2M)",
-      status:"Work-in-progress",
-      ogDev:"Developed at the National Theatre School of Canada, dramaturgy by Andrea Romaldi",
-      devHist:[
-      {
-          what: "Workshop and professional reading",
-          where:"National Theatre School of Canada",
-          when:"April 2026",
-          devTeam: "",
-      },
-        {
-          what: "Reading",
-          where:"National Theatre School of Canada",
-          when:"February 2026",
-          devTeam: "",
-      }
-      ]
-  },
-  {
-    title: "corps",
-    title2: "Corps",
-    order: 10,
-      quote:"Four women meet in a conference room for a company-mandated "female empowerment workshop." In an office down the hall, the disembodied spirit of their recently-deceased HR director tells her replacement she should quit while she's ahead."
-    description: "A darkly comic social thriller in the vein of Get Out and Severance, Corps is a workplace haunted house story exploring lateral violence. What happens when we feel unable to affect the powerful people and systemic forces that keep us down, and instead direct our anger at those closest to us? In a time where the most vulnerable of us are more desperate—and more divided— than ever, how do we protect one another without putting ourselves at risk?",
-    pic: "./assets/photos/corps.jpg",
-      castSize:"6F",
-      status:"work-in-progress",
-      ogDev:"Ongoing development with Playwrights Workshop Montreal, dramaturgy by Sarah Elkashef, Initially developed as part of Teesri Duniya Theatre's Fireworks Play Development Unit",
-      devHist:[
-      {
-          what: "Week-long workshop with design exploration, staged reading",
-          where:"",
-          when:"June 2026",
-          devTeam: ["Directed by Rinchen Dolma, dramaturgy by Sara", "Supported by Playwrights Workshop Montreal and The Canada Council for the Arts" ]
-      },
-      {
-          what: "Two-day workshop",
-          where:"",
-          when:"July 2024",
-          devTeam: ["Directed by Annie Valentina, dramaturgy by Sarah Elkashef", "Supported by Playwrights Workshop Montreal"]
-      },
-      {
-          what: "First-draft reading",
-          where:"Teesri Duniya Theatre",
-          when:"May 2023",
-          devTeam: "Directed by Jen Cressey",
-      }
-      ]
-  },
-  {
-    title: "fireproof",
-    title2: "Fireproof",
-    order: 1,
-    description: `Description Forthcoming<br><br>
-    Set to premiere at the NTS New Words Festival in April 2027. <br><br>Currently in development at the National Theatre School of Canada, dramaturgy by Jovanni Sy`,
-    pic: "./assets/photos/fireproof.jpg",
-      castSize:"6 (4F/2M)",
-      status:"Work-in-progress",
-      ogDev:"Currently in development at the National Theatre School of Canada, dramaturgy by Jovanni Sy",
-  },
-  {
-    title: "beccablob",
-    title2: "Becca and the Blob",
-    order: 98,
-      quote: "I don't understand humans at all...",
-    description:"When an alien named Blob crash-lands in Becca's backyard, Blob asks for Becca's help tracking down the missing pieces of their spaceship. Becca agrees, but only if Blob follows all of Becca's rules and disguises themself as a human. A play for ages 6 and up about navigating difference, rules, and social norms; being a good friend; and standing up for yourself when people treat you like you're from another planet.",
-    pic: "./assets/photos/beccablob.jpg",
-      castSize:"3 performers (1F/1NB/1ANY)",
-      age: "TYA 6+",
-      status:"work-in-progress",
-      ogDev:"Currently in development at the National Theatre School of Canada, dramaturgy by Dean Patrick Fleming
-",
-      devHist:[
-      {
-          what: "Reading",
-          where:"National Theatre School of Canada",
-          when:"February 2026",
-          devTeam: "",
-      }
-      ]
-  },
-  {
-    title: "caretake",
-    title2: "Care/Take",
-    order: 95,
-      quote:"She said she wanted me to be happy."
-    description: `Care/Take follows two adult siblings, Will and Emily, who reunite in their hometown when their father has a stroke and is taken to the hospital for emergency surgery. As the two argue about what to do if their father is disabled by the stroke, wounds from their past reopen, and they must reckon with the roles— caretaker or victim— that each of them has taken on in their family. A one-act, one-room, two-hander that asks “when and how should we give care to others, and when and how should we accept it for ourselves?”`,
-    pic: "./assets/photos/caretake.jpg",
-      castSize:"2 (1F/1M)",
-      status:"One-act (40min), Production-ready",
-      ogDev:"Developed at the National Theatre School of Canada, dramaturgy by Ann-Marie Macdonald",
-      devHist:[
-      {
-          what: "Reading",
-          where:"National Theatre School of Canada",
-          when:"April 2025",
-          devTeam: "",
-      },
-      {
-          what: "Workshop and reading",
-          where:"National Theatre School of Canada",
-          when:"January 2025",
-          devTeam: "",
-      }
-      ]
-  },
-]; 
+//console.log(unsortedPlays);
 
-  
 
 //make part of the page where the plays go
 const playsDiv = document.getElementById("playbox");
@@ -184,8 +25,9 @@ function populatePlays() {
     //create the card element
     const playCard = document.createElement("div");
     playCard.setAttribute("class", "play");
-   
- //title element
+    playCard.setAttribute("id", play.title)
+
+    //title element
     const playTitle = document.createElement("h4");
     playTitle.innerHTML = play.title2;
     //cover div element
@@ -197,33 +39,47 @@ function populatePlays() {
     coverImg.setAttribute("class", play.title);
     coverImg.setAttribute("src", play.pic);
 
-    //description element
+    //description box
     const descDiv = document.createElement("div");
     descDiv.style.visibility = "hidden";
-        descDiv.setAttribute("class", "desc-div");
+    descDiv.setAttribute("class", "desc-div");
 
+    //description teaser element IF THERE IS ONE!!!!
+    if (play.teaser.length > 0) {
+      const teaser = document.createElement("p");
+      teaser.setAttribute("class", "teaser")
+      teaser.innerHTML = play.teaser;
+      descDiv.append(teaser);
+
+    }
+    //description p element
     const descP = document.createElement("p")
     descP.setAttribute("class", "play-desc");
     descP.innerHTML = play.description;
 
-    
-
+    //more details button 
     const fullDeets = document.createElement("button")
-    fullDeets.setAttribute("class","detail-btn")
+    fullDeets.setAttribute("class", "detail-btn")
     fullDeets.innerHTML = ("More Info")
-
+    fullDeets.style.visibility = "hidden";
+    
+    //if clicked takes them to another webpage
     fullDeets.addEventListener("click", (event) => {
-      location.href("/"+title);
+      //location.href("/" + play.title);
+      console.log("clicked to go to " +play.title2+ "'s page");
+      selectedPlay = play;
+      console.log(selectedPlay).title2;
+      localStorage.setItem("currentPlay", selectedPlay);
     })
 
 
     //adds all the elements together onto the playcard, and then to the playsDiv
-    playCard.appendChild(playTitle);
-    playCard.appendChild(coverDiv);
-    coverDiv.appendChild(coverImg);
+    playCard.append(playTitle);
+    playCard.append(coverDiv);
+    coverDiv.append(coverImg);
     descDiv.append(descP)
-    descDiv.append(fullDeets)
-    playCard.appendChild(descDiv);
+    playCard.append(fullDeets)
+    playCard.append(descDiv);
     playsDiv.append(playCard);
     descDiv.style.visibility = "hidden";
 
@@ -233,15 +89,18 @@ function populatePlays() {
       coverImg.style.opacity = "0%";
       //shows the desc text
       descDiv.style.visibility = "visible";
+      fullDeets.style.visibility = "visible"
       //log to check
       console.log("hovered on " + play.title2);
     });
+
     //when the mouse leaves the playCard
     playCard.addEventListener("mouseleave", (event) => {
       //bring the opacity back up
       coverImg.style.opacity = "100%";
       //hide the desc
       descDiv.style.visibility = "hidden";
+      fullDeets.style.visibility = "hidden"
       //log to check
       console.log("mouse left " + play.title2);
     });

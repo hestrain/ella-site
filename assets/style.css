@@ -209,10 +209,6 @@ nav {
 
 }
 
-.quote {
-    font-style: oblique;
-}
-
 .indent {
     margin-left: 10px;
 }
@@ -223,6 +219,19 @@ nav {
     font-variant: small-caps;
     width: fit-content;
 }
+.popup {
+    position: fixed;
+    left: 30%;
+    right: 30%;
+    top: 25%;
+    background-color: var(---bloo);
+    font-size:xx-large;
+    border: var(--sand) 2px dotted;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
 
 /* mobile formatting */
 @media (max-width: 700px) {

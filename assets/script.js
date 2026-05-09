@@ -68,8 +68,12 @@ function populatePlays() {
       //location.href("/" + play.title);
       console.log("clicked to go to " +play.title2+ "'s page");
       selectedPlay = play;
-      console.log(selectedPlay).title2;
+      console.log(selectedPlay.title2);
       localStorage.setItem("currentPlay", selectedPlay);
+      // const popup = document.createElement("div")
+      // popup.setAttribute("class", "popup")
+      // popup.innerHTML = play.title2 + "'s page is unavailable right now, sorry."
+      // playsDiv.append(popup)
     })
 
 

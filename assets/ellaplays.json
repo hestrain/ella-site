@@ -5,7 +5,7 @@
         "order": 29,
         "teaser": "\"What if people don't like me for good reasons?\"",
         "description": "Rachel has run away from home with nothing but her school bag and a well-read copy of Moby Dick. Anxious, closeted, and being followed around by an apparition of her younger self that only she can see, Rachel is at the end of her rope. But when she meets Sam, an older girl doing graffiti in an alleyway downtown, she's convinced she's found her saviour. The only play about a 17-year-old lesbian who's obsessed with a 625-page novel about whaling, Exits is a comedic, dramatic, nerdy, whimsical exploration of queer identity and growing up.",
-        "pic": "./assets/photos/exits2.jpg",
+        "pic": "./assets/photos/exits1.jpg",
         "castSize": "3F",
         "age": "TYA 14+",
         "status":"",
@@ -121,7 +121,7 @@
     {
         "title": "fireproof",
         "title2": "Fireproof",
-        "order": 2,
+        "order": 1,
         "teaser":"",
         "description": "Description Forthcoming<br><br>Set to premiere at the NTS New Words Festival in April 2027. <br><br>Currently in development at the National Theatre School of Canada, dramaturgy by Jovanni Sy",
         "pic": "./assets/photos/fireproof.jpg",

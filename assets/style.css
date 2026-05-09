@@ -51,6 +51,11 @@ footer {
     margin-top: 20px;
 }
 
+.playheader{
+    padding-top: 15px;
+    margin-top: 5px;
+}
+
 /*nav bar*/
 nav {
     display: flex;

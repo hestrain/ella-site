@@ -5,7 +5,7 @@ const unsortedPlays = [
     title: "exits",
     title2: "Exits",
     order: 99,
-    description: `<scan class="quote">"What if people don't like me for good reasons?"</scan><br>
+    description: `<scan class="quote">"What if people don't like me for good reasons?"</scan><br><br>
     Rachel has run away from home with nothing but her school bag and a well-read copy of Moby Dick. Anxious, closeted, and being followed around by an apparition of her younger self that only she can see, Rachel is at the end of her rope. But when she meets Sam, an older girl doing graffiti in an alleyway downtown, she's convinced she's found her saviour. The only play about a 17-year-old lesbian who's obsessed with a 625-page novel about whaling, Exits is a comedic, dramatic, nerdy, whimsical exploration of queer identity and growing up. <br>`,
     pic: "./assets/photos/exits2.jpg",
     otherInfo: `Cast size: 3F <br>
@@ -53,7 +53,7 @@ const unsortedPlays = [
     title2: "Wolf",
     order: 2,
     description: ` <scan class="quote"> Iris wakes up in the forest with blood in her mouth. How did she get here? When did it begin?
-    </scan> <br>
+    </scan> <br><br>
     An aspiring painter, Iris has spent the past 4 years stuck in her small hometown working full-time at a
     manufacturing facility and taking care of her ailing mother. When her ex-girlfriend, Charlotte, returns to town
     after graduating from the art school that Iris couldn't afford to attend, Iris begins to feel an insatiable hunger
@@ -81,7 +81,7 @@ const unsortedPlays = [
     order: 10,
     description: `<scan class="quote">Four women meet in a conference room for a company-mandated "female empowerment workshop." In an
       office down the hall, the disembodied spirit of their recently-deceased HR director, tells the woman who was hired
-      to replace her that she should quit while she's ahead. </scan>
+      to replace her that she should quit while she's ahead. </scan><br><br>
     A darkly comic social thriller in the vein of Get Out and Severance, Corps is a workplace haunted house story that
     explores lateral violence. What happens when we feel unable to affect the people and systems that keep us oppressed,
     and instead direct our anger at those closest to us? In a time where the most vulnerable of us are more
@@ -113,7 +113,7 @@ const unsortedPlays = [
     title: "fireproof",
     title2: "Fireproof",
     order: 1,
-    description: `Description Forthcoming<br>
+    description: `Description Forthcoming<br><br>
     Set to premiere at the NTS New Words Festival in April 2027`,
     pic: "./assets/photos/fireproof.jpg",
     otherInfo: `Cast size: 6 (4F/2M)<br>
@@ -124,7 +124,7 @@ const unsortedPlays = [
     title: "beccablob",
     title2: "Becca and the Blob",
     order: 98,
-    description: `<scan class="quote">"I don't understand humans at all..."</scan> <br>
+    description: `<scan class="quote">"I don't understand humans at all..."</scan> <br><br>
     When an alien named Blob crash-lands in Becca's backyard, Blob asks for Becca's help tracking down the missing
     pieces of their spaceship. Becca agrees, but only if Blob follows all of Becca's rules and disguises themself as a
     human. A play for ages 6 and up about navigating difference, rules, and social norms; being a good friend; and
@@ -145,7 +145,7 @@ const unsortedPlays = [
     title: "caretake",
     title2: "Care/Take",
     order: 95,
-    description: ` <scan class="quote">"She said she wanted me to be happy."</scan><br>
+    description: ` <scan class="quote">"She said she wanted me to be happy."</scan><br><br>
     Care/Take follows two adult siblings, Will and Emily, who reunite in their hometown when their father has a stroke
     and is taken to the hospital for emergency surgery. As the two argue about what to do if their father is disabled by
     the stroke, wounds from their past reopen, and they must reckon with the roles— caretaker or victim— that each of

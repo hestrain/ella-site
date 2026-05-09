@@ -159,6 +159,7 @@ nav {
     padding: 2px;
     width: 34%;
     min-width: 345px !important;
+    margin-top: 15px;
 }
 
 .quote {
@@ -169,6 +170,14 @@ nav {
     margin-left: 10px;
 }
 
+.heather{
+    font-size: x-small;
+    color: blue;
+    font-variant: small-caps;
+    width: fit-content;
+}
+
+/* mobile formatting */
 @media (max-width: 700px) {
     .home {
         flex-direction: row;

@@ -115,7 +115,7 @@ const unsortedPlays = [
     title2: "Fireproof",
     order: 1,
     description: `Description Forthcoming<br><br>
-    Set to premiere at the NTS New Words Festival in April 2027`,
+    Set to premiere at the NTS New Words Festival in April 2027. <br><br>Currently in development at the National Theatre School of Canada, dramaturgy by Jovanni Sy`,
     pic: "./assets/photos/fireproof.jpg",
     otherInfo: `Cast size: 6 (4F/2M)<br>
   Work-in-progress<br>
@@ -202,9 +202,14 @@ function populatePlays() {
 
     //description element
     const descDiv = document.createElement("div");
-    descDiv.setAttribute("class", "play-desc");
-    descDiv.innerHTML = play.description;
     descDiv.style.visibility = "hidden";
+        descDiv.setAttribute("class", "desc-div");
+
+    const descP = document.createElement("p")
+    descP.setAttribute("class", "play-desc");
+    descP.innerHTML = play.description;
+
+    
 
     const fullDeets = document.createElement("button")
     fullDeets.setAttribute("class","detail-btn")
@@ -214,10 +219,13 @@ function populatePlays() {
       location.href("/"+title);
     })
 
+
     //adds all the elements together onto the playcard, and then to the playsDiv
     playCard.appendChild(playTitle);
     playCard.appendChild(coverDiv);
     coverDiv.appendChild(coverImg);
+    descDiv.append(descP)
+    descDiv.append(fullDeets)
     playCard.appendChild(descDiv);
     playsDiv.append(playCard);
     descDiv.style.visibility = "hidden";

@@ -49,34 +49,40 @@
     ],
     "prodPhotos": [
       {
-        "path": "../assets/photos/exitspics/prod-exits1.jpg",
+        "path": "../assets/photos/exitspics/exits-prod1.jpg",
         "alt": "",
-        "kind": "p"
+        "kind": "p",
+        "credit":""
       },
       {
-        "path": "../assets/photos/exitspics/prod-exits2.jpg",
+        "path": "../assets/photos/exitspics/exits-prod4.jpg",
         "alt": "",
-        "kind": "p"
+        "kind": "p",
+        "credit":""
       },
       {
-        "path": "../assets/photos/exitspics/prod-exits3.jpg",
+        "path": "../assets/photos/exitspics/exits-prod3.jpg",
         "alt": "",
-        "kind": "l"
+        "kind": "l",
+        "credit":""
       },
       {
-        "path": "../assets/photos/exitspics/prod-exits6.jpg",
+        "path": "../assets/photos/exitspics/exits-prod2.jpg",
         "alt": "",
-        "kind": "l"
+        "kind": "l",
+        "credit": "Cindy Lopez"
       },
       {
-        "path": "../assets/photos/exitspics/prod-exits4.jpg",
+        "path": "../assets/photos/exitspics/exits-prod6.jpg",
         "alt": "",
-        "kind": "l"
+        "kind": "l",
+        "credit":""
       },
       {
-        "path": "../assets/photos/exitspics/prod-exits5.jpg",
+        "path": "../assets/photos/exitspics/exits-prod5.jpg",
         "alt": "",
-        "kind": "l"
+        "kind": "l",
+        "credit":""
       }
     ]
   },

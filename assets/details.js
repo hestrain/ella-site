@@ -141,10 +141,19 @@ photosEl.append(coverImg);
 
 
 if (thisPlay.prodPhotos.length>0) {
-  thisPlay.prodPhotos.forEach(photo => {
+
+  let orderedPhotos = thisPlay.prodPhotos.sort((a,b) =>  a.path.localeCompare(b.path))
+  console.log(orderedPhotos);
+  
+
+  orderedPhotos.forEach(photo => {
     const prodPic = document.createElement("img")
     prodPic.src = photo.path
     prodPic.alt = photo.alt
+    const credit = document.createElement("label")
+    credit.innerHTML = photo.credit
+    credit.setAttribute("class","pic-credit")
+    prodPic.append(credit)
     const classes = "spec-photos prod-pic dir-"+prodPic.kind
     prodPic.setAttribute("class", classes)
 

@@ -69,6 +69,10 @@ nav {
         left: -20px;
 }
 
+header{
+    height: 40px;
+}
+
 .navlink {
     color: black;
     padding: 5px;
@@ -206,11 +210,12 @@ nav {
 }
 
 .detail-btn{
-    background-color: var(---bloo);
+    background-color: var(--yello);
     margin: 0px;
     border-radius: 4px;
     bottom: 2px;
     position: relative;
+    border: none;
 }
 .detail-btn:hover{
     background-color: var(--sand);
@@ -229,15 +234,30 @@ nav {
 }
 .popup {
     position: fixed;
-    left: 30%;
-    right: 30%;
     top: 25%;
     background-color: var(---bloo);
     font-size:xx-large;
-    border: var(--sand) 2px dotted;
-    width: 400px;
-    height: 400px;
+    width: 60%;
+    height: max-content;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px black solid;
+    padding-top: 5px;
+}
+.close-btn {
+    font-size: medium;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.close-btn:hover{
+    background-color: var(--sand);
 }
 .email{
     margin-left: 25px;

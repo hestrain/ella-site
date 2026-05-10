@@ -1,12 +1,26 @@
-//import unsortedPlays from "./ellaplays.json" with { type: "json" };
-let selectedPlay = localStorage.getItem("currentPlay");
+import unsortedPlays from "./ellaplays.json" with { type: "json" };
 
+let checkUrl = window.location.href
+console.log(checkUrl);
+// Source - https://stackoverflow.com/a/4758173
+// Posted by Frédéric Hamidi, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-05-09, License - CC BY-SA 4.0
+
+let shortUrl = checkUrl.substring(checkUrl.lastIndexOf('/') + 1);
+
+let pageName = shortUrl.split(".")[0];
+
+console.log(pageName);
+
+let thisPlay = unsortedPlays.find((play) => play.title === pageName);
 
 const titleEl = document.getElementById("title")
-const descEl = document.getElementById("title");
-const currentDevEl = document.getElementById("title");
-const detailsEl = document.getElementById("title");
-const historyEl = document.getElementById("title");
+const descEl = document.getElementById("desc");
+const detailsEl = document.getElementById("details");
+const castEl = document.getElementById("cast-zone")
+const statusEl = document.getElementById("status-zone")
+
+const historyEl = document.getElementById("history");
 const photosEl = document.getElementById("photos")
 
 
@@ -16,60 +30,97 @@ function createPage(){
   // title, teaser, descritpion, castSize, status, age, ogDev, devHist, Press
 
   const title = document.createElement("h2")
-  title.innerHTML = selectedPlay.title2;
+  title.innerHTML = thisPlay.title2;
+  title.setAttribute("class", "spec-title")
+
+  titleEl.append(title)
 
   const teaser = document.createElement("p")
-  teaser.innerHTML = selectedPlay.teaser
+  teaser.setAttribute("class","spec-teaser")
+  teaser.innerHTML = thisPlay.teaser
+
+  descEl.append(teaser)
 
   const description = document.createElement("p")
-  description.innerHTML = selectedPlay.description
+  description.innerHTML = thisPlay.description
+    description.setAttribute("class","spec-desc")
 
-  const castSize = document.createElement("p")
-  castSize.innerHTML = selectedPlay.castSize
+  descEl.append(description)
+
+  const castSize = document.createElement("scan")
+  castSize.innerHTML = thisPlay.castSize
+    castSize.setAttribute("class", "spec-cast");
+
+  castEl.append(castSize)
   
-  const ogDev = document.createElement("p");
-  ogDev.innerHTML = selectedPlay.ogDev
+
   
   //HAVE TO CHECK THAT THERES STUFF IN ALMOST EVERY ONE OF THESE LMAO
-  const age = document.createElement("p")
-  age.innerHTML = selectedPlay.age
-  const status = document.createElement("p");
-  status.innerHTML = selectedPlay.status;
+  const age = document.createElement("scan")
+  age.innerHTML = thisPlay.age
+  age.setAttribute("class", "spec-age");
+
+  detailsEl.append(age)
+
+  const status = document.createElement("scan");
+  status.innerHTML = thisPlay.status;
+    status.setAttribute("class", "spec-status");
+
+  statusEl.append(status)
+
+    const ogDev = document.createElement("p");
+    ogDev.innerHTML = thisPlay.ogDev;
+    ogDev.setAttribute("class", "spec-ogdev");
+
+    detailsEl.append(ogDev);
 
 //IF theres anything in DevHist then you have to do this
-  let fullHistory = selectedPlay.devHist
+  let fullHistory = thisPlay.devHist
 
 
   fullHistory.forEach(event => {
     //div per development event
-    const eventEl = document.createElement("div");
+    const eventEl = document.createElement("li");
+      eventEl.setAttribute("class", "spec-event");
+
 
     //p to hold the what/where/when
     const infoEl = document.createElement("p")
+    infoEl.setAttribute("class","info-line")
 
     //the what
     const what = document.createElement("scan")
     what.innerHTML = event.what
     infoEl.append(what)
+      what.setAttribute("class", "spec-what");
+
 
     //the where
     const where = document.createElement("scan");
   where.innerHTML = event.where
   infoEl.append(where)
+    where.setAttribute("class", "spec-where");
+
 
   //the when
     const when = document.createElement("scan")
     when.innerHTML = event.when
     infoEl.append(when)
+      when.setAttribute("class", "spec-when");
+
 
     //TO ADD - IF DEVTEAM IS LONGER THAN 0 THEN DO THE FOLLOWING
     //unordered list of people
     const people = document.createElement("ul")
+      people.setAttribute("class", "spec-people");
+
     //for each person listed. . . 
     event.devTeam.forEach(teamSupporter => {
       //make a person list item
       const person = document.createElement("li")
       person.innerHTML = teamSupporter;
+        person.setAttribute("class", "spec-person");
+
 
       //add it to the ul
       people.append(person)
@@ -78,8 +129,16 @@ function createPage(){
     //add the 2 event specific peices of info to the event element
     eventEl.append(infoEl)
     eventEl.append(people)
+    historyEl.append(eventEl)
   });
 
+const coverImg = document.createElement("img")
+coverImg.src = thisPlay.pic
+coverImg.setAttribute("class", "spec-photos cover-photo")
+console.log(thisPlay.pic);
+
+photosEl.append(coverImg)
 
 }
 createPage()
+

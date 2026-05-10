@@ -1,0 +1,68 @@
+.spec-title{
+font-size: xx-large;
+}
+.spec-desc {
+}
+.spec-teaser {
+    font-style: italic;
+}
+.spec-cast {
+}
+.spec-ogdev {
+    margin-left: 20px;
+}
+.spec-age {
+color: darkgreen;
+}
+.spec-status {
+}
+
+.info-line {
+display: inline;
+}
+.spec-what {
+    font-weight: 600;
+    margin-right: 5px;
+
+}
+.spec-when {
+ font-style: italic;
+}
+.spec-where {
+ margin-right: 5px;
+}
+.spec-people {
+margin-left: 5px;
+}
+.spec-person {
+
+}
+.ques {
+    margin-left: 20px;
+}
+
+.spec-header{
+    text-align: left;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.spec-photos {
+            display: flex;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: start;
+            margin: 10px;
+            padding: 0 10px;
+}
+
+.cover-photo{
+    margin-top: 20px;
+}

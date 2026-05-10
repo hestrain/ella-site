@@ -1,6 +1,5 @@
 /* general format */
 :root {
-    --primary-bg-color: green;
     --offwhite: #fffbf5;
     --yello: #fff0cd;
     ---bloo: #d3edf1;
@@ -222,6 +221,7 @@ header {
 
 .detail-btn:hover {
     background-color: var(--sand);
+    cursor: pointer;
 
 }
 
@@ -264,6 +264,7 @@ header {
 
 .close-btn:hover {
     background-color: var(--sand);
+    cursor: pointer;
 }
 
 .email {
@@ -301,6 +302,7 @@ header {
 .email:hover {
     background-color: var(---bloo);
     text-decoration: solid black 1px;
+    cursor: pointer;
 }
 
 .social-icon {
@@ -312,6 +314,7 @@ header {
     box-shadow: var(---bloo) 2px 5px 5px;
     background-color: var(---bloo);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .socials-text {

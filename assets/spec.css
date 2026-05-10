@@ -1,3 +1,11 @@
+/* general format */
+:root {
+    --offwhite: #fffbf5;
+    --yello: #fff0cd;
+    ---bloo: #d3edf1;
+    --sand: #d3b29e;
+    background-color: var(--sand);
+}
 .spec-title {
     font-size: xx-large;
 }
@@ -95,6 +103,12 @@ width: 100%;
     width: 55%;
     margin: 10px;
     padding: 5px;
+}
+
+.press-link:hover{
+    background-color: var(--offwhite);
+    cursor: pointer;
+    text-decoration: underline var(---bloo) 2px;
 }
 
 /* mobile formatting */

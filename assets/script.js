@@ -120,30 +120,31 @@ function populatePlays() {
     
     //if clicked takes them to another webpage
     fullDeets.addEventListener("click", (event) => {
-      //location.href("/" + play.title);
+      const pageRef = "pages/" + play.title +".html"
+      window.location.href = pageRef;
       console.log("clicked to go to " +play.title2+ "'s page");
-      selectedPlay = play;
-      console.log(selectedPlay.title2);
-      localStorage.setItem("currentPlay", selectedPlay);
+      // selectedPlay = play;
+      // console.log(selectedPlay.title2);
+      // localStorage.setItem("currentPlay", selectedPlay);
 
-      //ALL OF THIS CAN DISSAPEAR WHEN PAGES EXIST <3
-      //Make popup when play not ready
-      const popup = document.createElement("div")
-      popup.setAttribute("class", "popup")
-      popup.innerHTML = play.title2 + "'s page is unavailable right now, sorry."
-      popup.style.visibility = "visible"
-      playsDiv.append(popup)
-      console.log(popup);
+      // //ALL OF THIS CAN DISSAPEAR WHEN PAGES EXIST <3
+      // //Make popup when play not ready
+      // const popup = document.createElement("div")
+      // popup.setAttribute("class", "popup")
+      // popup.innerHTML = play.title2 + "'s page is unavailable right now, sorry."
+      // popup.style.visibility = "visible"
+      // playsDiv.append(popup)
+      // console.log(popup);
       
-      //make a button to get rid f the popup
-      const closePopup = document.createElement("button")
-      closePopup.innerHTML="Okay"
-      closePopup.setAttribute("class", "close-btn")
-      popup.append(closePopup)
-      closePopup.addEventListener("click", (event) => {
-        popup.style.visibility="hidden"
-        playsDiv.removeChild(popup)
-      })
+      // //make a button to get rid f the popup
+      // const closePopup = document.createElement("button")
+      // closePopup.innerHTML="Okay"
+      // closePopup.setAttribute("class", "close-btn")
+      // popup.append(closePopup)
+      // closePopup.addEventListener("click", (event) => {
+      //   popup.style.visibility="hidden"
+      //   playsDiv.removeChild(popup)
+      // })
       
     })
 

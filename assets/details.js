@@ -132,14 +132,6 @@ function createPage(){
     historyEl.append(eventEl)
   });
 
-const coverImg = document.createElement("img")
-coverImg.src = thisPlay.pic
-coverImg.setAttribute("class", "spec-photos cover-photo")
-console.log(thisPlay.pic);
-
-photosEl.append(coverImg);
-
-
 if (thisPlay.prodPhotos.length>0) {
 
   let orderedPhotos = thisPlay.prodPhotos.sort((a,b) =>  a.path.localeCompare(b.path))
@@ -159,6 +151,13 @@ if (thisPlay.prodPhotos.length>0) {
 
     photosEl.append(prodPic)
   });
+} else {
+  const coverImg = document.createElement("img");
+  coverImg.src = thisPlay.pic;
+  coverImg.setAttribute("class", "spec-photos cover-photo");
+  console.log(thisPlay.pic);
+
+  photosEl.append(coverImg);
 }
 
 

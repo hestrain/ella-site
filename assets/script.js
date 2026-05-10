@@ -60,9 +60,7 @@ function makeContacts() {
     contactSection.append(socials)
 
   });
-
 }
-
 
 makeContacts()
 
@@ -118,7 +116,7 @@ function populatePlays() {
     fullDeets.innerHTML = ("More Info")
     fullDeets.style.visibility = "hidden";
 
-    //if clicked takes them to another webpage
+    //if clicked takes them to the plays detailed page
     fullDeets.addEventListener("click", (event) => {
       const pageRef = "pages/" + play.title + ".html"
       window.location.href = pageRef;

@@ -1,31 +1,39 @@
-/* general format */
+/*--------------------GENRAL FORMAT--------------------------*/
 :root {
+    /* all my variables */
     --offwhite: #fffbf5;
     --yello: #fff0cd;
     ---bloo: #d3edf1;
     --sand: #d3b29e;
+
+    /*general background color*/
     background-color: var(--sand);
 }
 
+/*font for entire page*/
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*main header - says ella kohlmann nice n big and bold*/
 h1 {
     text-align: center;
     font-weight: 800;
 }
 
+/*section headers*/
 h2 {
     text-align: center;
     font-weight: 700;
 }
 
+/*play covers*/
 h4 {
     text-align: center;
     font-weight: 600;
 }
 
+/*general formatting for each section*/
 section {
     min-height: fit-content;
     /* background-color: var(--offwhite); */
@@ -35,28 +43,31 @@ section {
     height: 100%;
 }
 
-.section2 {
-    margin-top: 50px;
-    background-color: var(--sand);
-}
 
+
+/*basic img format*/
 img {
     width: 100%;
     aspect-ratio: initial;
 }
 
+/*footer*/
 footer {
     text-align: center;
     font-size: 12px;
     margin-top: 20px;
+    position:static;
+    bottom: 10px;
+    left: 50%;
 }
 
+/*specifc for the h2 in plays section*/
 .playheader {
     padding-top: 15px;
     margin-top: 5px;
 }
 
-/*nav bar*/
+/*--------------------nav ba----------------------r*/
 nav {
     display: flex;
     background-color: var(--yello);
@@ -68,10 +79,12 @@ nav {
     left: -20px;
 }
 
+/*theres nothing in the header, but it needs to be taller than the navbar*/
 header {
     height: 40px;
 }
 
+/*the links in the nav*/
 .navlink {
     color: black;
     padding: 5px;
@@ -80,11 +93,13 @@ header {
     text-decoration: none;
 }
 
+/*change nav link color when hover*/
 .navlink:hover {
     background-color: var(---bloo);
 }
 
-/*bio and headshot section*/
+/*--------------------SECTION 1 BIO FORMAT-------------------*/
+/*bio and headshot section (section1)*/
 .home {
     display: flex;
     top: 50px;
@@ -116,7 +131,13 @@ header {
     display: block;
     margin: auto;
 }
-
+/*--------------------SECTION 2 PLAYS FORMAT-----------------*/
+/*specific formatting for the 2nd section (plays)*/
+.section2 {
+    margin-top: 50px;
+    background-color: var(--sand);
+}
+/*Titles*/
 .play-title {
     font-style: oblique;
     font-weight: 700;
@@ -124,7 +145,7 @@ header {
     text-decoration: none;
 }
 
-/* all the formatting for all the plays! */
+/* a flexbox that contains the plays */
 .playbox {
     display: flex;
     align-items: center;
@@ -134,7 +155,7 @@ header {
     margin-top: 20px;
     flex-wrap: wrap;
 }
-
+/*specific box for each play*/
 .play {
     /* border: 2px solid var(---bloo); */
     width: 25%;
@@ -147,8 +168,14 @@ header {
     flex-direction: column;
     align-items: center;
 }
+/*hover on a play box*/
+.play:hover {
+    box-shadow: black 2px 10px 10px;
+    background-color: var(--yello);
+    /* opacity: 100%; */
+}
 
-/*rectangles  the covers*/
+/*square the covers*/
 .cover {
     text-align: center;
     display: flex;
@@ -169,34 +196,7 @@ header {
     align-items: center;
     text-align: start;
 }
-
-.play:hover {
-    box-shadow: black 2px 10px 10px;
-    background-color: var(--yello);
-    /* opacity: 100%; */
-}
-
-.play-desc {
-    color: black;
-    background-color: var(--yello);
-    width: 90%;
-    font-size: 15px;
-    margin-bottom: 0;
-
-}
-
-.teaser {
-    color: black;
-    background-color: var(--yello);
-    width: 90%;
-    font-size: 15px;
-    font-style: italic;
-    margin: 0px;
-    margin-top: 5px;
-    margin-bottom: 2px;
-
-}
-
+/*div for the teaser and description*/
 .desc-div {
     position: absolute;
     margin-left: 30px;
@@ -209,7 +209,28 @@ header {
     align-items: center;
     justify-content: space-around;
 }
+/*italics bit a tthe top of hte desc*/
+.teaser {
+    color: black;
+    background-color: var(--yello);
+    width: 90%;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 2px;
 
+}
+/*the actal descriptn*/
+.play-desc {
+    color: black;
+    background-color: var(--yello);
+    width: 90%;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/*button at the bottom of description that takes you to the full deets pages*/
 .detail-btn {
     background-color: var(--yello);
     margin: 0px;
@@ -218,24 +239,100 @@ header {
     position: relative;
     border: none;
 }
-
+/*on hover make it look clickable*/
 .detail-btn:hover {
     background-color: var(--sand);
     cursor: pointer;
 
 }
+/*--------------------SECTION 3 CONTACT FORMAT---------------*/
+/*DIV THAT HOLDS CONTACT STUFF*/
+.contact-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+/*EMAIL FORMAT*/
+.email {
+    color: black;
+    text-decoration: none;
+}
+
+.email:hover {
+    background-color: var(---bloo);
+    text-decoration: solid black 1px;
+    cursor: pointer;
+}
+
+/* .contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/*HOLDS SOCIAL MEDIA*/
+.socials-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+/*SINGLE SOCIAL MEDIA*/
+.a-social {
+    display: flex;
+    flex-direction: column;
+}
+
+/*THE IMAGE*/
+.social-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icon:hover {
+    box-shadow: var(---bloo) 2px 5px 5px;
+    background-color: var(---bloo);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.socials-text {
+    font-size: x-small;
+}
 
 .indent {
     margin-left: 10px;
 }
+/*--------------------FOOTER FORMAT--------------------------*/
 
-.heather {
+
+.heather a {
     font-size: x-small;
-    color: var(--sand);
-    font-variant: small-caps;
+    color: black;
     width: fit-content;
 }
 
+
+/* ---------------mobile formatting ------------------*/
+@media (max-width: 700px) {
+    .home {
+        flex-direction: row;
+    }
+
+    .headshot {
+        width: 200px;
+        margin: auto;
+    }
+
+    .bio {
+        width: 100%;
+        margin: auto;
+    }
+
+
+/* --------------ARCHIVE---------------------------------
 .popup {
     position: fixed;
     top: 25%;
@@ -265,77 +362,5 @@ header {
 .close-btn:hover {
     background-color: var(--sand);
     cursor: pointer;
-}
-
-.email {
-    color: black;
-    text-decoration: none;
-}
-
-.contactInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-.contact-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.socials-box {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-.a-social {
-    display: flex;
-    flex-direction: column;
-}
-
-.email:hover {
-    background-color: var(---bloo);
-    text-decoration: solid black 1px;
-    cursor: pointer;
-}
-
-.social-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.social-icon:hover {
-    box-shadow: var(---bloo) 2px 5px 5px;
-    background-color: var(---bloo);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.socials-text {
-    font-size: x-small;
-}
-
-/* mobile formatting */
-@media (max-width: 700px) {
-    .home {
-        flex-direction: row;
-    }
-
-    .headshot {
-        width: 200px;
-        margin: auto;
-    }
-
-    .bio {
-        width: 100%;
-        margin: auto;
-    }
-
-
+} */
 }

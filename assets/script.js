@@ -15,53 +15,53 @@ localStorage.setItem("currentPlay", selectedPlay)
 const playsDiv = document.getElementById("playbox");
 //console.log(playsDiv);
 
-function makeContacts(){
+function makeContacts() {
   const contactSection = document.getElementById("contactInfo")
   console.log("making contacts");
-    
-    const socials = document.createElement("div");
-    socials.setAttribute("class", "socials-box");
-  
+
+  const socials = document.createElement("div");
+  socials.setAttribute("class", "socials-box");
+
 
   contacts.forEach(contact => {
 
     //console.log(contact);
 
-    
-//email
-    if(contact.title === "email") {
+
+    //email
+    if (contact.title === "email") {
 
       const emailButton = document.createElement("a")
-      emailButton.innerHTML= contact.linktext
-      emailButton.setAttribute("class","email")
+      emailButton.innerHTML = contact.linktext
+      emailButton.setAttribute("class", "email")
       emailButton.href = contact.url
-    
+
       contactSection.append(emailButton);
     }
     //socials
-      else {
-        const oneSocial = document.createElement("div")
-        oneSocial.setAttribute("class","a-social")
-        //console.log(contact.title);
-        
-        const icon = document.createElement("img")
-        const icona = document.createElement("a")
-        icon.src = contact.icon
-        // icon.setAttribute("src", contact.icon)
-        icon.alt = contact.title
-        icon.setAttribute("class", "social-icon")
-        icona.href = contact.url
-        icona.append(icon)
-  
-        oneSocial.append(icona)
-        socials.append(oneSocial)
-      }
-  
-      contactSection.append(socials)
-      
+    else {
+      const oneSocial = document.createElement("div")
+      oneSocial.setAttribute("class", "a-social")
+      //console.log(contact.title);
+
+      const icon = document.createElement("img")
+      const icona = document.createElement("a")
+      icon.src = contact.icon
+      // icon.setAttribute("src", contact.icon)
+      icon.alt = contact.title
+      icon.setAttribute("class", "social-icon")
+      icona.href = contact.url
+      icona.append(icon)
+
+      oneSocial.append(icona)
+      socials.append(oneSocial)
+    }
+
+    contactSection.append(socials)
+
   });
 
-  }
+}
 
 
 makeContacts()
@@ -71,7 +71,7 @@ function populatePlays() {
   //sort the plays by the order#
   const plays = unsortedPlays.sort((a, b) => a.order - b.order);
   console.log("making plays");
-  
+
   //for each play in the array....
   plays.forEach((play) => {
     //log the title of the play
@@ -117,13 +117,13 @@ function populatePlays() {
     fullDeets.setAttribute("class", "detail-btn")
     fullDeets.innerHTML = ("More Info")
     fullDeets.style.visibility = "hidden";
-    
+
     //if clicked takes them to another webpage
     fullDeets.addEventListener("click", (event) => {
-      const pageRef = "pages/" + play.title +".html"
+      const pageRef = "pages/" + play.title + ".html"
       window.location.href = pageRef;
-      console.log("clicked to go to " +play.title2+ "'s page");
-      
+      console.log("clicked to go to " + play.title2 + "'s page");
+
     })
 
 

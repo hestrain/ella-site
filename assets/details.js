@@ -137,7 +137,21 @@ coverImg.src = thisPlay.pic
 coverImg.setAttribute("class", "spec-photos cover-photo")
 console.log(thisPlay.pic);
 
-photosEl.append(coverImg)
+photosEl.append(coverImg);
+
+
+if (thisPlay.prodPhotos.length>0) {
+  thisPlay.prodPhotos.forEach(photo => {
+    const prodPic = document.createElement("img")
+    prodPic.src = photo.path
+    prodPic.alt = photo.alt
+    const classes = "spec-photos prod-pic dir-"+prodPic.kind
+    prodPic.setAttribute("class", classes)
+
+    photosEl.append(prodPic)
+  });
+}
+
 
 }
 createPage()

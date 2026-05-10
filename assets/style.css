@@ -1,12 +1,12 @@
 /* general format */
 :root {
-     --primary-bg-color: green;
-     --offwhite: #fffbf5;
-     --yello: #fff0cd;
-     ---bloo: #d3edf1;
-     --sand: #d3b29e;
- background-color: var(--sand);
- }
+    --primary-bg-color: green;
+    --offwhite: #fffbf5;
+    --yello: #fff0cd;
+    ---bloo: #d3edf1;
+    --sand: #d3b29e;
+    background-color: var(--sand);
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +52,7 @@ footer {
     margin-top: 20px;
 }
 
-.playheader{
+.playheader {
     padding-top: 15px;
     margin-top: 5px;
 }
@@ -66,10 +66,10 @@ nav {
     top: 0px;
     width: 110%;
     opacity: 100%;
-        left: -20px;
+    left: -20px;
 }
 
-header{
+header {
     height: 40px;
 }
 
@@ -113,7 +113,7 @@ header{
 
 .headshotpic {
     max-width: 100%;
-    max-height:100%;
+    max-height: 100%;
     display: block;
     margin: auto;
 }
@@ -185,6 +185,7 @@ header{
     margin-bottom: 0;
 
 }
+
 .teaser {
     color: black;
     background-color: var(--yello);
@@ -196,20 +197,21 @@ header{
     margin-bottom: 2px;
 
 }
-.desc-div{
+
+.desc-div {
     position: absolute;
-        margin-left: 30px;
-        margin-right: 30px;
-        width: 18%;
-        min-width: 345px !important;
-        margin-top: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 18%;
+    min-width: 345px !important;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.detail-btn{
+.detail-btn {
     background-color: var(--yello);
     margin: 0px;
     border-radius: 4px;
@@ -217,7 +219,8 @@ header{
     position: relative;
     border: none;
 }
-.detail-btn:hover{
+
+.detail-btn:hover {
     background-color: var(--sand);
 
 }
@@ -226,17 +229,18 @@ header{
     margin-left: 10px;
 }
 
-.heather{
+.heather {
     font-size: x-small;
     color: var(--sand);
     font-variant: small-caps;
     width: fit-content;
 }
+
 .popup {
     position: fixed;
     top: 25%;
     background-color: var(---bloo);
-    font-size:xx-large;
+    font-size: xx-large;
     width: 60%;
     height: max-content;
     text-align: center;
@@ -247,6 +251,7 @@ header{
     border: 2px black solid;
     padding-top: 5px;
 }
+
 .close-btn {
     font-size: medium;
     padding: 3px;
@@ -256,55 +261,60 @@ header{
     border: 1px black solid;
     border-radius: 5px;
 }
-.close-btn:hover{
+
+.close-btn:hover {
     background-color: var(--sand);
 }
-.email{
+
+.email {
     color: black;
     text-decoration: none;
 }
 
-.contactInfo{
+.contactInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
 }
-.contact-div{
+
+.contact-div {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-.socials-box{
+.socials-box {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
 }
-.a-social{
+
+.a-social {
     display: flex;
     flex-direction: column;
 }
-.email:hover{
+
+.email:hover {
     background-color: var(---bloo);
     text-decoration: solid black 1px;
-
 }
+
 .social-icon {
     width: 50px;
     height: 50px;
 }
 
-.social-icon:hover{
+.social-icon:hover {
     box-shadow: var(---bloo) 2px 5px 5px;
-background-color: var(---bloo);
-border-radius: 10px;
+    background-color: var(---bloo);
+    border-radius: 10px;
 }
-    
-.socials-text{
+
+.socials-text {
     font-size: x-small;
 }
 
@@ -313,11 +323,13 @@ border-radius: 10px;
     .home {
         flex-direction: row;
     }
+
     .headshot {
         width: 200px;
         margin: auto;
     }
-    .bio{
+
+    .bio {
         width: 100%;
         margin: auto;
     }

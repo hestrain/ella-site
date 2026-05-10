@@ -4,7 +4,7 @@
     "title2": "Exits",
     "order": 29,
     "teaser": "\"What if people don't like me for good reasons?\"",
-    "description": "17-year old Rachel has run away from home with nothing but her school bag and a well-read copy of Moby Dick. Anxious, closeted, and being followed around by an apparition of her younger self that only she can see, Rachel is at the end of her rope. But when she meets Sam, a cool older girl doing graffiti in an alleyway downtown, she's convinced she's found her saviour. <br><br>Funny, nerdy, heartfelt, existential, and full of theatrical magic, Exits is a play for teen audiences about trying to tell the story of who you are when it feels like you haven't even made it past the prologue",
+    "description": "17-year old Rachel has run away from home with nothing but her school bag and a well-read copy of Moby Dick. Anxious, closeted, and being followed around by an apparition of her younger self that only she can see, Rachel is at the end of her rope. But when she meets Sam, a cool older girl doing graffiti in an alleyway downtown, she's convinced she's found her saviour. <br><br>Funny, nerdy, heartfelt, existential, and full of theatrical magic, Exits is a play for teen audiences about trying to tell the story of who you are when it feels like you haven't even made it past the prologue.",
     "pic": "../assets/photos/exits1.jpg",
     "castSize": "3F",
     "age": "TYA 14+",
@@ -107,7 +107,7 @@
         "what": "Workshop and professional reading",
         "where": "National Theatre School of Canada",
         "when": "April 2026",
-        "devTeam": []
+        "devTeam": ["Cast: Alyssa Angelucci-Wall, Juliette Diodati, Karl Graboshas, Marcel Jeannin, Mary Harvey"]
       },
       {
         "what": "Table Read",
@@ -137,7 +137,7 @@
         "when": "June 2026",
         "devTeam": [
           "Directed by Rinchen Dolma, dramaturgy by Fatma Sarah Elkashef",
-          "Supported by Playwrights Workshop Montreal and The Canada Council for the Arts"
+          "Supported by Playwrights Workshop Montreal and The Canada Council for the Arts", "Cast: Amelia Sargisson, Shiong-En Chan, Ellen David, Ravyn Bekh, Lior Maharjan, Maxime DPomerleau"
         ]
       },
       {
@@ -146,14 +146,14 @@
         "when": "July 2024",
         "devTeam": [
           "Directed by Annie Valentina, dramaturgy by Fatma Sarah Elkashef",
-          "Supported by Playwrights Workshop Montreal"
+          "Supported by Playwrights Workshop Montreal", "Cast: Tamara Sevunts, Julie Tamiko Manning, Ellen David, Espoir Segebeya, Lior Maharjan, Gillian Clark"
         ]
       },
       {
         "what": "First-draft reading",
         "where": "Teesri Duniya Theatre",
         "when": "May 2023",
-        "devTeam": ["Directed by Jen Cressey"]
+        "devTeam": ["Directed by Jen Cressey", "Cast: Natasha Fagant, Ambica Sharma, Leigh Ann Taylor, Tiernan Cornford, Tevin Sawyer, Robyn Erin Ellison"]
       }
     ],
     "press": [],
@@ -181,7 +181,7 @@
     "teaser": "\"I don't understand humans at all...\"",
     "description": "When an alien named Blob crash-lands in Becca's backyard, Blob asks for Becca's help tracking down the missing pieces of their spaceship. Becca agrees, but only if Blob follows all of Becca's rules and disguises themself as a human. A play for ages 6 and up about navigating difference, rules, and social norms; being a good friend; and standing up for yourself when people treat you like you're from another planet.",
     "pic": "../assets/photos/beccablob.jpg",
-    "castSize": "3 performers (1F/1NB/1ANY)",
+    "castSize": "3 (1F/1NB/1ANY)",
     "age": "TYA 6+",
     "status": "work-in-progress",
     "ogDev": "Currently in development at the National Theatre School of Canada, dramaturgy by Dean Patrick Fleming",
@@ -212,13 +212,13 @@
         "what": "Reading",
         "where": "National Theatre School of Canada",
         "when": "April 2025",
-        "devTeam": []
+        "devTeam": ["Cast: Thea Knickle, Alexander Wilson"]
       },
       {
         "what": "Workshop and reading",
         "where": "National Theatre School of Canada",
         "when": "January 2025",
-        "devTeam": []
+        "devTeam": ["Cast: Juliette Diodati, Noah Labranche"]
       }
     ],
     "press": [],

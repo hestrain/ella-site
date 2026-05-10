@@ -15,7 +15,12 @@
         "what": "Production",
         "where": "Montreal Fringe Festival",
         "when": "2019",
-        "devTeam": ["Directed by Madison Jolliffe"]
+        "devTeam": ["Mainline Theatre, June 7-16, 2019",
+    "Director: Madison Jolliffe",
+    "Stage Manger: Kate Babin",
+    "Lighting Designer: Amy White",
+    "Costume and Props Designer: Levi Krivy",
+    "Cast: Kate Hammer, Orion Hausknost, Ella Kohlmann"]
       },
       {
         "what": "Staged Reading",
@@ -29,7 +34,7 @@
         "where": "Young Creators Unit, Playwrights Workshop Montreal",
         "devTeam": [
           "Directed by Sarah Segal-Lazar",
-          "dramaturgy by Jesse Stong"
+          "Dramaturgy by Jesse Stong"
         ]
       }
     ],

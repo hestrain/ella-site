@@ -65,7 +65,7 @@ if (thisPlay.status.length>0) {
 const statusEl = document.createElement("p");
 statusEl.setAttribute("class","status-zone")
 statusEl.innerHTML ="Status: "
-descEl.append(statusEl)
+detailsEl.append(statusEl)
 
     statusEl.append(status);
 }

@@ -8,7 +8,9 @@
     font-style: italic;
 }
 
-.spec-cast {}
+.spec-cast {
+    margin-left: 20px;
+}
 
 .spec-ogdev {
     margin-left: 20px;
@@ -18,7 +20,9 @@
     color: darkgreen;
 }
 
-.spec-status {}
+.spec-status {
+    margin-left: 20px;
+}
 
 .info-line {
     display: inline;
@@ -40,6 +44,8 @@
 
 .spec-people {
     margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .spec-person {}

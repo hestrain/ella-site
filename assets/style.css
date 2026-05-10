@@ -260,21 +260,28 @@ header{
     background-color: var(--sand);
 }
 .email{
-    margin-left: 25px;
     color: black;
     text-decoration: none;
 }
 
 .contactInfo{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
+.contact-div{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+}
+
 .socials-box{
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    margin-left: 25px;
     margin-top: 20px;
 }
 .a-social{
@@ -292,7 +299,11 @@ header{
 }
 
 .social-icon:hover{
-    box-shadow: var(---bloo) 2px 5px 5px;}
+    box-shadow: var(---bloo) 2px 5px 5px;
+background-color: var(---bloo);
+border-radius: 10px;
+}
+    
 .socials-text{
     font-size: x-small;
 }

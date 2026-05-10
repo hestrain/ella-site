@@ -96,3 +96,23 @@ width: 100%;
     margin: 10px;
     padding: 5px;
 }
+
+/* mobile formatting */
+@media (max-width: 700px) {
+    .columns {
+        flex-direction: column;
+    }
+
+
+    .project-left {
+        width: 80%;
+        margin: auto;
+    }
+
+    .project-right {
+        width: 100%;
+        margin: auto;
+    }
+
+
+}

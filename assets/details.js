@@ -18,7 +18,6 @@ const titleEl = document.getElementById("title")
 const descEl = document.getElementById("desc");
 const detailsEl = document.getElementById("details");
 const castEl = document.getElementById("cast-zone")
-const statusEl = document.getElementById("status-zone")
 
 const historyEl = document.getElementById("history");
 const photosEl = document.getElementById("photos")
@@ -53,21 +52,25 @@ function createPage(){
 
   castEl.append(castSize)
   
-
-  
-  //HAVE TO CHECK THAT THERES STUFF IN ALMOST EVERY ONE OF THESE LMAO
-  const age = document.createElement("scan")
-  age.innerHTML = thisPlay.age
+if (thisPlay.age.length>0) {
+  const age = document.createElement("scan");
+  age.innerHTML = thisPlay.age;
   age.setAttribute("class", "spec-age");
 
-  detailsEl.append(age)
+  detailsEl.append(age);
+}
 
-  const status = document.createElement("scan");
-  status.innerHTML = thisPlay.status;
+if (thisPlay.status.length>0) {
+    const status = document.createElement("scan");
+    status.innerHTML = thisPlay.status;
     status.setAttribute("class", "spec-status");
+const statusEl = document.createElement("p");
+statusEl.setAttribute("class","status-zone")
+statusEl.innerHTML ="Status: "
+descEl.append(statusEl)
 
-  statusEl.append(status)
-
+    statusEl.append(status);
+}
     const ogDev = document.createElement("p");
     ogDev.innerHTML = thisPlay.ogDev;
     ogDev.setAttribute("class", "spec-ogdev");

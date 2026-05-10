@@ -18,8 +18,6 @@ const titleEl = document.getElementById("title")
 const descEl = document.getElementById("desc");
 const detailsEl = document.getElementById("details");
 const castEl = document.getElementById("cast-zone")
-
-const historyEl = document.getElementById("history");
 const photosEl = document.getElementById("photos")
 
 
@@ -77,63 +75,70 @@ descEl.append(statusEl)
 
     detailsEl.append(ogDev);
 
+    let fullHistory = thisPlay.devHist
+    if (fullHistory.length>0) {
+      const historyHeader = document.createElement("h2")
+      historyHeader.innerHTML = "Past Development"
+      historyHeader.setAttribute("class", "spec-header")
+      const historyEl = document.createElement("ul")
+      historyEl.setAttribute("class", "spec-history")
+      const historyDiv = document.getElementById("history")
+
+      historyDiv.append(historyHeader)
+      historyDiv.append(historyEl)
+
+        fullHistory.forEach((event) => {
+          //div per development event
+          const eventEl = document.createElement("li");
+          eventEl.setAttribute("class", "spec-event");
+
+          //p to hold the what/where/when
+          const infoEl = document.createElement("p");
+          infoEl.setAttribute("class", "info-line");
+
+          //the what
+          const what = document.createElement("scan");
+          what.innerHTML = event.what;
+          infoEl.append(what);
+          what.setAttribute("class", "spec-what");
+
+          //the where
+          const where = document.createElement("scan");
+          where.innerHTML = event.where;
+          infoEl.append(where);
+          where.setAttribute("class", "spec-where");
+
+          //the when
+          const when = document.createElement("scan");
+          when.innerHTML = event.when;
+          infoEl.append(when);
+          when.setAttribute("class", "spec-when");
+
+          //unordered list of people
+          const people = document.createElement("ul");
+          people.setAttribute("class", "spec-people");
+
+          //for each person listed. . .
+          event.devTeam.forEach((teamSupporter) => {
+            //make a person list item
+            const person = document.createElement("li");
+            person.innerHTML = teamSupporter;
+            person.setAttribute("class", "spec-person");
+
+            //add it to the ul
+            people.append(person);
+          });
+
+          //add the 2 event specific peices of info to the event element
+          eventEl.append(infoEl);
+          eventEl.append(people);
+          historyEl.append(eventEl);
+        });
+    }
 //IF theres anything in DevHist then you have to do this
-  let fullHistory = thisPlay.devHist
 
 
-  fullHistory.forEach(event => {
-    //div per development event
-    const eventEl = document.createElement("li");
-      eventEl.setAttribute("class", "spec-event");
 
-
-    //p to hold the what/where/when
-    const infoEl = document.createElement("p")
-    infoEl.setAttribute("class","info-line")
-
-    //the what
-    const what = document.createElement("scan")
-    what.innerHTML = event.what
-    infoEl.append(what)
-      what.setAttribute("class", "spec-what");
-
-
-    //the where
-    const where = document.createElement("scan");
-  where.innerHTML = event.where
-  infoEl.append(where)
-    where.setAttribute("class", "spec-where");
-
-
-  //the when
-    const when = document.createElement("scan")
-    when.innerHTML = event.when
-    infoEl.append(when)
-      when.setAttribute("class", "spec-when");
-
-
-    //TO ADD - IF DEVTEAM IS LONGER THAN 0 THEN DO THE FOLLOWING
-    //unordered list of people
-    const people = document.createElement("ul")
-      people.setAttribute("class", "spec-people");
-
-    //for each person listed. . . 
-    event.devTeam.forEach(teamSupporter => {
-      //make a person list item
-      const person = document.createElement("li")
-      person.innerHTML = teamSupporter;
-        person.setAttribute("class", "spec-person");
-
-
-      //add it to the ul
-      people.append(person)
-    });
-
-    //add the 2 event specific peices of info to the event element
-    eventEl.append(infoEl)
-    eventEl.append(people)
-    historyEl.append(eventEl)
-  });
 
 if (thisPlay.prodPhotos.length>0) {
 

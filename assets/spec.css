@@ -8,10 +8,19 @@
 }
 .spec-title {
     font-size: xx-large;
+    margin-top: 50px;
 }
 
-/* .spec-desc {} */
-
+/* .spec-desc {
+    /* padding: 30px 30px 30px 0px;
+} */ */
+.spec-desc-el {
+    margin: 30px;
+    padding: 30px;
+}
+.spec-details {
+    margin-right: 30px;
+}
 .spec-teaser {
     font-style: italic;
 }
@@ -21,7 +30,9 @@
 }
 
 .spec-ogdev {
-    margin-left: 20px;
+    margin: 20px;
+        padding: 30px 30px 30px 0px;
+
 }
 
 .spec-age {
@@ -71,7 +82,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    flex-wrap:nowrap
 }
 
 .spec-photos {
@@ -81,30 +92,38 @@
     align-items: center;
     text-align: start;
     margin: 10px;
-    padding: 0 10px;
 }
 
-.cover-photo {
+ .cover-photo {
     margin-top: 20px;
      height: 300px;
             width: 300px;
-}
+            /* margin: 20px; */
+} 
 
 .prod-pic{
 height: 100%;
 width: 100%;
 }
 
+.one-image {
+
+}
+
 .project-left{
-    width: 35%;
-    margin-right: 20px;
-    margin-left: 10px;
+    width: 45%;
+    margin-right: 30px;
+    margin-left: 30px;
+    max-width: 800px;
+    margin-top: 40px;
 }
 
 .project-right{
     width: 55%;
     margin: 10px;
     padding: 5px;
+    margin-right: 30px;
+
 }
 
 .press-link:hover{
@@ -123,6 +142,7 @@ width: 100%;
     .project-left {
         width: 80%;
         margin: auto;
+        height: min-content;
     }
     .photo-col{
         display: flex;

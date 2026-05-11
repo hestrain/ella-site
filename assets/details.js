@@ -84,7 +84,7 @@ function createPage() {
 
   //------------DESCRIPTION-------------------
   const descEl = document.createElement("div");
-  descEl.setAttribute("class", "spec-desc");
+  descEl.setAttribute("class", "spec-desc-el");
   rightCol.append(descEl);
 
   //teaser for the play description
@@ -269,7 +269,7 @@ function createPage() {
       }
       //add to the photo
       //add the right classes to the img
-      const classes = "spec-photos prod-pic dir-" + prodPic.kind;
+      const classes = "spec-photos sample-img prod-pic dir-" + prodPic.kind;
       prodPic.setAttribute("class", classes);
 
       //add to photos div
@@ -282,7 +282,7 @@ function createPage() {
     //as put above, if no prod photos just cover photo
     const coverImg = document.createElement("img");
     coverImg.src = thisPlay.pic;
-    coverImg.setAttribute("class", "spec-photos cover-photo");
+    coverImg.setAttribute("class", "spec-photos cover-photo prod-pic");
     // console.log(thisPlay.pic);
 
     photosEl.append(coverImg);

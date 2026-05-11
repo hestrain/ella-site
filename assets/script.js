@@ -39,7 +39,8 @@ function makeContacts() {
       contactSection.append(emailButton);
     }
     //socials
-    else {
+    else if (contact.title != "footer") {
+      
       const oneSocial = document.createElement("div")
       oneSocial.setAttribute("class", "a-social")
       //console.log(contact.title);
@@ -60,6 +61,26 @@ function makeContacts() {
     contactSection.append(socials)
 
   });
+
+    //------FOOTEEERRRR-------------
+
+  let footerObj = contacts.find((contact) => contact.title === "footer");
+
+
+  const footerEl = document.getElementById("footer-info")
+  const ellaCopy = document.createElement("p")
+  ellaCopy.setAttribute("class", "ella")
+  ellaCopy.innerHTML = "Copyright " + footerObj.footerName + " " + footerObj.year
+  const heatherCred = document.createElement("div")
+  heatherCred.setAttribute("class", "heather")
+  heatherCred.innerHTML = "Website by "
+  const heatherAHref = document.createElement("a")
+  heatherAHref.innerHTML = footerObj.developer
+  heatherAHref.href = footerObj.devLink
+
+  heatherCred.append(heatherAHref)
+  footerEl.append(ellaCopy)
+  footerEl.append(heatherCred)
 }
 
 makeContacts()
@@ -158,6 +179,7 @@ function populatePlays() {
     });
   });
 }
+
 
 //calls the function
 populatePlays();

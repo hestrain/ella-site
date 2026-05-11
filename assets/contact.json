@@ -16,5 +16,14 @@
     "url":"https://ca.linkedin.com/in/ellakohlmann",
     "linktext":"linkedin",
     "icon":"./assets/photos/LinkedinEdit.png"
+  },
+  {
+    "title":"footer",
+    "footerName":"Ella Kohlmann",
+    "year":2026,
+    "developer":"HeatherEllen Strain",
+    "devLink":"https://www.heatherellenstrain.com"
   }
+
+
 ]

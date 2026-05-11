@@ -1,5 +1,7 @@
 //import the plays to make the page
 import unsortedPlays from "./ellaplays.json" with { type: "json" };
+import contacts from "./contact.json" with { type: "json" };
+
 
 //get the location of the page 
 let checkUrl = window.location.href
@@ -323,6 +325,27 @@ function createPage() {
       pressEl.append(articleEl);
     }, rightCol.append(pressDiv));
   }
+
+  //------FOOTEEERRRR-------------
+
+  let footerObj = contacts.find((contact) => contact.title === "footer");
+
+
+  const footerEl = document.getElementById("footer-info")
+  const ellaCopy = document.createElement("p")
+  ellaCopy.setAttribute("class", "ella")
+  ellaCopy.innerHTML = "Copyright " + footerObj.footerName + " " + footerObj.year
+  const heatherCred = document.createElement("div")
+  heatherCred.setAttribute("class", "heather")
+  heatherCred.innerHTML = "Website by "
+  const heatherAHref = document.createElement("a")
+  heatherAHref.innerHTML = footerObj.developer
+  heatherAHref.href = footerObj.devLink
+
+  heatherCred.append(heatherAHref)
+  footerEl.append(ellaCopy)
+  footerEl.append(heatherCred)
+
 }
 createPage()
 

@@ -20,30 +20,6 @@ let pageName = shortUrl.split(".")[0];
 //get the play that matches the page
 let thisPlay = unsortedPlays.find((play) => play.title === pageName);
 
-//find all the existing elements on the page
-//tbh i probably want it to MAKE all these elements but for now theyre here
-// const titleEl = document.getElementById("title")
-// const descEl = document.getElementById("desc");
-// const detailsEl = document.getElementById("details");
-// const photosEl = document.getElementById("photos")
-
-// Div Columns - stays on page
-// Right-Col - Done
-  // Title - done
-  // description - done
-  //   Teaser - done
-  //   Description - done
-  // Details - done
-  //   age - Done
-  //   cast - done
-  //   status - done
-  // History - done
-  // Press - done
-//Left-col - Done
-  // photos - done
-
-//NAV - do this
-//FOOTER - do this
 
 //find the main div (called columns)
 const deetsPage = document.getElementById("detail-page-div")

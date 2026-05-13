@@ -302,6 +302,14 @@ function createPage() {
     }, rightCol.append(pressDiv));
   }
 
+  const spacerElR = document.createElement("div")
+  spacerElR.setAttribute("class", "spec-spacer")
+  rightCol.append(spacerElR)
+
+   const spacerElL = document.createElement("div");
+   spacerElL.setAttribute("class", "spec-spacer");
+   leftCol.append(spacerElL);
+
   //------FOOTEEERRRR-------------
 
   let footerObj = contacts.find((contact) => contact.title === "footer");

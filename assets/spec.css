@@ -132,6 +132,12 @@ width: 100%;
     text-decoration: underline var(---bloo) 2px;
 }
 
+.spec-spacer{
+    margin: 20px;
+    padding: 20px;
+    min-height: 30px;
+}
+
 /* mobile formatting */
 @media (max-width: 794px) {
     .columns {

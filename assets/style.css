@@ -174,7 +174,8 @@ header {
 .play:hover {
     box-shadow: black 2px 10px 10px;
     background-color: var(--yello);
-    /* opacity: 100%; */
+    opacity: 90%;
+        cursor: pointer;
 }
 
 /*square the covers*/

@@ -43,15 +43,18 @@
     "press": [
       {
         "url": "https://scripteditty.wordpress.com/2019/05/31/fringeterview-1-ella-kohlmann-and-madie-jolliffe-of-exits/",
-        "linkText": "Queer Romance is at the Heart of Fringe Play Exits"
+        "linkText": "Fringeterview #1: Ella Kohlmann and Madie Jolliffe of Exits",
+        "quotes":[]
       },
       {
         "url": "https://thelinknewspaper.ca/article/queer-romance-is-at-the-heart-of-fringe-play-exits",
-        "linkText": "Fringeterview #1: Ella Kohlmann and Madie Jolliffe of Exits"
+        "linkText": "Queer Romance is at the Heart of Fringe Play Exits",
+        "quotes": []
       },
       {
         "url": "https:/web.archive.org/web/20190920021153/https:/montrealtheatrehub.com/2019/06/14/fringe-review-c-a-s-t-s-exits-is-nerdy-timeless-and-utterly-enjoyable",
-        "linkText": "Fringe C.A.S.T./'s “Exits” is Nerdy, Timeless and Utterly Enjoyable"
+        "linkText": "Fringe C.A.S.T./'s “Exits” is Nerdy, Timeless and Utterly Enjoyable",
+        "quotes": []
       }
     ],
     "prodPhotos": [
@@ -233,7 +236,7 @@
     "press": [
       {
         "url": "https://theatrebc.org/canadian-playwriting-competition-2022",
-        "linkText": "One Act Play Winner, Theatre BC 2025 Canadian Playwrighting Competition",
+        "linkText": "One Act Play Winner, Theatre BC 2025 Canadian Playwriting Competition",
         "quotes":["\"A polished script with sparkling, believable dialogue. Nothing is resolved but we are left thinking about it long after the play is done.\"", "\"Great, original, crystal clear characters ... Brilliant slice of a family life and helping each other get through the hard moments. Effortlessly builds the bigger picture of their world without being obvious.\" - Juror, Theatre BC"]
       }
     ],

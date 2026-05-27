@@ -171,15 +171,20 @@ function createPage() {
       infoEl.addEventListener("click", (event) => {
         window.open(article.url, "_blank");
       });
-      const quotesEl = document.createElement("ul")
-      article.quotes.forEach((quote) => {
-        const theQuote = document.createElement("li")
-        theQuote.innerHTML = quote
-        quotesEl.append(theQuote)
-        theQuote.setAttribute("class", "press-quote")
-      })
+
       articleEl.append(infoEl);
-      articleEl.append(quotesEl)
+      if (article.quotes.length>0){
+
+        const quotesEl = document.createElement("ul")
+        article.quotes.forEach((quote) => {
+          const theQuote = document.createElement("li")
+          theQuote.innerHTML = quote
+          quotesEl.append(theQuote)
+          theQuote.setAttribute("class", "press-quote")
+        })
+        articleEl.append(quotesEl)
+      }
+
 
       pressEl.append(articleEl);
     }, rightCol.append(pressDiv));

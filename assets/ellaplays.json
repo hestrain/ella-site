@@ -221,7 +221,8 @@
         "devTeam": ["Cast: Juliette Diodati, Noah Labranche"]
       }
     ],
-    "press": [],
+    "press": [{"url":"https://theatrebc.org/canadian-playwriting-competition-2022",
+    "linkText":"A polished script with sparkling, believable dialogue. Nothing is resolved but we are left thinking about it long after the play is done."}],
     "prodPhotos": []
   }
 ]

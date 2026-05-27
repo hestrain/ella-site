@@ -126,12 +126,23 @@ width: 100%;
 
 }
 
+.press-link{
+    text-decoration: underline var(---bloo) 2px;
+}
 .press-link:hover{
     background-color: var(--offwhite);
     cursor: pointer;
     text-decoration: underline var(---bloo) 2px;
 }
 
+.press-quote {
+    text-decoration: none; 
+    margin: 10px;
+}
+
+.press-quote:hover {
+    text-decoration: none;
+}
 .spec-spacer{
     margin: 20px;
     padding: 20px;

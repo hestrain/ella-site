@@ -15,12 +15,14 @@
         "what": "Production",
         "where": "Montreal Fringe Festival",
         "when": "2019",
-        "devTeam": ["Mainline Theatre, June 7-16, 2019",
-    "Director: Madison Jolliffe",
-    "Stage Manger: Kate Babin",
-    "Lighting Designer: Amy White",
-    "Costume and Props Designer: Levi Krivy",
-    "Cast: Kate Hammer, Orion Hausknost, Ella Kohlmann"]
+        "devTeam": [
+          "Mainline Theatre, June 7-16, 2019",
+          "Director: Madison Jolliffe",
+          "Stage Manger: Kate Babin",
+          "Lighting Designer: Amy White",
+          "Costume and Props Designer: Levi Krivy",
+          "Cast: Kate Hammer, Orion Hausknost, Ella Kohlmann"
+        ]
       },
       {
         "what": "Staged Reading",
@@ -57,19 +59,19 @@
         "path": "../assets/photos/exitspics/exits-prod1.jpg",
         "alt": "",
         "kind": "p",
-        "credit":""
+        "credit": ""
       },
       {
         "path": "../assets/photos/exitspics/exits-prod4.jpg",
         "alt": "",
         "kind": "p",
-        "credit":""
+        "credit": ""
       },
       {
         "path": "../assets/photos/exitspics/exits-prod3.jpg",
         "alt": "",
         "kind": "l",
-        "credit":"Cindy Lopez"
+        "credit": "Cindy Lopez"
       },
       {
         "path": "../assets/photos/exitspics/exits-prod2.jpg",
@@ -81,13 +83,13 @@
         "path": "../assets/photos/exitspics/exits-prod6.jpg",
         "alt": "",
         "kind": "l",
-        "credit":""
+        "credit": ""
       },
       {
         "path": "../assets/photos/exitspics/exits-prod5.jpg",
         "alt": "",
         "kind": "l",
-        "credit":""
+        "credit": ""
       }
     ]
   },
@@ -107,7 +109,9 @@
         "what": "Workshop and professional reading",
         "where": "National Theatre School of Canada",
         "when": "April 2026",
-        "devTeam": ["Cast: Alyssa Angelucci-Wall, Juliette Diodati, Karl Graboshas, Marcel Jeannin, Mary Harvey"]
+        "devTeam": [
+          "Cast: Alyssa Angelucci-Wall, Juliette Diodati, Karl Graboshas, Marcel Jeannin, Mary Harvey"
+        ]
       },
       {
         "what": "Table Read",
@@ -117,7 +121,7 @@
       }
     ],
     "press": [],
-        "prodPhotos": []
+    "prodPhotos": []
   },
   {
     "title": "corps",
@@ -137,7 +141,8 @@
         "when": "June 2026",
         "devTeam": [
           "Directed by Rinchen Dolma, dramaturgy by Fatma Sarah Elkashef",
-          "Supported by Playwrights Workshop Montreal and The Canada Council for the Arts", "Cast: Amelia Sargisson, Shiong-En Chan, Ellen David, Ravyn Bekh, Lior Maharjan, Maxime DPomerleau"
+          "Supported by Playwrights Workshop Montreal and The Canada Council for the Arts",
+          "Cast: Amelia Sargisson, Shiong-En Chan, Ellen David, Ravyn Bekh, Lior Maharjan, Maxime DPomerleau"
         ]
       },
       {
@@ -146,14 +151,18 @@
         "when": "July 2024",
         "devTeam": [
           "Directed by Annie Valentina, dramaturgy by Fatma Sarah Elkashef",
-          "Supported by Playwrights Workshop Montreal", "Cast: Tamara Sevunts, Julie Tamiko Manning, Ellen David, Espoir Segebeya, Lior Maharjan, Gillian Clark"
+          "Supported by Playwrights Workshop Montreal",
+          "Cast: Tamara Sevunts, Julie Tamiko Manning, Ellen David, Espoir Segebeya, Lior Maharjan, Gillian Clark"
         ]
       },
       {
         "what": "First-draft reading",
         "where": "Teesri Duniya Theatre",
         "when": "May 2023",
-        "devTeam": ["Directed by Jen Cressey", "Cast: Natasha Fagant, Ambica Sharma, Leigh Ann Taylor, Tiernan Cornford, Tevin Sawyer, Robyn Erin Ellison"]
+        "devTeam": [
+          "Directed by Jen Cressey",
+          "Cast: Natasha Fagant, Ambica Sharma, Leigh Ann Taylor, Tiernan Cornford, Tevin Sawyer, Robyn Erin Ellison"
+        ]
       }
     ],
     "press": [],
@@ -221,8 +230,13 @@
         "devTeam": ["Cast: Juliette Diodati, Noah Labranche"]
       }
     ],
-    "press": [{"url":"https://theatrebc.org/canadian-playwriting-competition-2022",
-    "linkText":"A polished script with sparkling, believable dialogue. Nothing is resolved but we are left thinking about it long after the play is done."}],
+    "press": [
+      {
+        "url": "https://theatrebc.org/canadian-playwriting-competition-2022",
+        "linkText": "One Act Play Winner, Theatre BC 2025 Canadian Playwrighting Competition",
+        "quotes":["\"A polished script with sparkling, believable dialogue. Nothing is resolved but we are left thinking about it long after the play is done.\"", "\"Great, original, crystal clear characters ... Brilliant slice of a family life and helping each other get through the hard moments. Effortlessly builds the bigger picture of their world without being obvious.\" - Juror, Theatre BC"]
+      }
+    ],
     "prodPhotos": []
   }
 ]

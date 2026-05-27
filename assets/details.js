@@ -141,6 +141,55 @@ function createPage() {
 
   detailsEl.append(ogDev);
 
+  //------------PRESS-------------------
+
+  //if the json file has press in it add to page
+  if (thisPlay.press.length > 0) {
+    const press = thisPlay.press;
+    const pressDiv = document.createElement("div");
+
+    const pressHeader = document.createElement("h4");
+    pressHeader.innerHTML = "Press/Awards";
+    pressHeader.setAttribute("class", "spec-header");
+    //list to hold the various press articles
+    const pressEl = document.createElement("div");
+    pressEl.setAttribute("class", "spec-history");
+    //add the 2 new elemtns to the page
+    pressDiv.append(pressHeader);
+    pressDiv.append(pressEl);
+
+    //for each article...
+    press.forEach((article) => {
+      //div per article
+      const articleEl = document.createElement("p");
+      articleEl.setAttribute("class", "spec-event");
+
+      //p to hold the what/where/when
+      const infoEl = document.createElement("p");
+      infoEl.setAttribute("class", "info-line press-link");
+      infoEl.innerHTML = "- " + article.linkText;
+      infoEl.addEventListener("click", (event) => {
+        window.open(article.url, "_blank");
+      });
+      const quotesEl = document.createElement("ul")
+      article.quotes.forEach((quote) => {
+        const theQuote = document.createElement("li")
+        theQuote.innerHTML = quote
+        quotesEl.append(theQuote)
+        theQuote.setAttribute("class", "press-quote")
+      })
+      articleEl.append(infoEl);
+      articleEl.append(quotesEl)
+
+      pressEl.append(articleEl);
+    }, rightCol.append(pressDiv));
+  }
+
+  // const spacerElR = document.createElement("div");
+  // spacerElR.setAttribute("class", "spec-spacer");
+  // rightCol.append(spacerElR);
+
+
   //------------DEVELOPMENT HISTORY-------------------
 
   //only add a development history section if there is info in the json file
@@ -215,6 +264,10 @@ function createPage() {
       historyEl.append(eventEl);
     });
   }
+  
+  const spacerElL = document.createElement("div");
+  spacerElL.setAttribute("class", "spec-spacer");
+  leftCol.append(spacerElL);
 
   //------------PHOTO COLUMN-------------------
 
@@ -266,70 +319,25 @@ function createPage() {
     photosEl.append(coverImg);
   }
 
-  //------------PRESS-------------------
-
-  //if the json file has press in it add to page
-  if (thisPlay.press.length > 0) {
-    const press = thisPlay.press;
-    const pressDiv = document.createElement("div");
-
-    const pressHeader = document.createElement("h4");
-    pressHeader.innerHTML = "Press";
-    pressHeader.setAttribute("class", "spec-header");
-    //list to hold the various press articles
-    const pressEl = document.createElement("ul");
-    pressEl.setAttribute("class", "spec-history");
-    //add the 2 new elemtns to the page
-    pressDiv.append(pressHeader);
-    pressDiv.append(pressEl);
-
-    //for each article...
-    press.forEach((article) => {
-      //div per article
-      const articleEl = document.createElement("li");
-      articleEl.setAttribute("class", "spec-event");
-
-      //p to hold the what/where/when
-      const infoEl = document.createElement("p");
-      infoEl.setAttribute("class", "info-line press-link");
-      infoEl.innerHTML = article.linkText;
-      infoEl.addEventListener("click", (event) => {
-        window.open(article.url, "_blank");
-      });
-
-      articleEl.append(infoEl);
-      pressEl.append(articleEl);
-    }, rightCol.append(pressDiv));
-  }
-
-  const spacerElR = document.createElement("div")
-  spacerElR.setAttribute("class", "spec-spacer")
-  rightCol.append(spacerElR)
-
-   const spacerElL = document.createElement("div");
-   spacerElL.setAttribute("class", "spec-spacer");
-   leftCol.append(spacerElL);
-
   //------FOOTEEERRRR-------------
 
   let footerObj = contacts.find((contact) => contact.title === "footer");
 
+  const footerEl = document.getElementById("footer-info");
+  const ellaCopy = document.createElement("p");
+  ellaCopy.setAttribute("class", "ella");
+  ellaCopy.innerHTML =
+    "Copyright " + footerObj.footerName + " " + footerObj.year;
+  const heatherCred = document.createElement("div");
+  heatherCred.setAttribute("class", "heather");
+  heatherCred.innerHTML = "Website by ";
+  const heatherAHref = document.createElement("a");
+  heatherAHref.innerHTML = footerObj.developer;
+  heatherAHref.href = footerObj.devLink;
 
-  const footerEl = document.getElementById("footer-info")
-  const ellaCopy = document.createElement("p")
-  ellaCopy.setAttribute("class", "ella")
-  ellaCopy.innerHTML = "Copyright " + footerObj.footerName + " " + footerObj.year
-  const heatherCred = document.createElement("div")
-  heatherCred.setAttribute("class", "heather")
-  heatherCred.innerHTML = "Website by "
-  const heatherAHref = document.createElement("a")
-  heatherAHref.innerHTML = footerObj.developer
-  heatherAHref.href = footerObj.devLink
-
-  heatherCred.append(heatherAHref)
-  footerEl.append(ellaCopy)
-  footerEl.append(heatherCred)
-
+  heatherCred.append(heatherAHref);
+  footerEl.append(ellaCopy);
+  footerEl.append(heatherCred);
 }
 createPage()
 

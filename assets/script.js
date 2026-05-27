@@ -113,70 +113,78 @@ function populatePlays() {
     coverImg.setAttribute("class", play.title);
     coverImg.setAttribute("src", play.pic);
 
-    //description box
-    const descDiv = document.createElement("div");
-    descDiv.style.visibility = "hidden";
-    descDiv.setAttribute("class", "desc-div");
+    // //description box
+    // const descDiv = document.createElement("div");
+    // descDiv.style.visibility = "hidden";
+    // descDiv.setAttribute("class", "desc-div");
 
-    //description teaser element IF THERE IS ONE!!!!
-    if (play.teaser.length > 0) {
-      const teaser = document.createElement("p");
-      teaser.setAttribute("class", "teaser")
-      teaser.innerHTML = play.teaser;
-      descDiv.append(teaser);
+    // //description teaser element IF THERE IS ONE!!!!
+    // if (play.teaser.length > 0) {
+    //   const teaser = document.createElement("p");
+    //   teaser.setAttribute("class", "teaser")
+    //   teaser.innerHTML = play.teaser;
+    //   descDiv.append(teaser);
 
-    }
-    //description p element
-    const descP = document.createElement("p")
-    descP.setAttribute("class", "play-desc");
-    descP.innerHTML = play.description;
+    // }
+    // //description p element
+    // const descP = document.createElement("p")
+    // descP.setAttribute("class", "play-desc");
+    // descP.innerHTML = play.description;
 
-    //more details button 
-    const fullDeets = document.createElement("button")
-    fullDeets.setAttribute("class", "detail-btn")
-    fullDeets.innerHTML = ("More Info")
-    fullDeets.style.visibility = "hidden";
+    // //more details button 
+    // const fullDeets = document.createElement("button")
+    // fullDeets.setAttribute("class", "detail-btn")
+    // fullDeets.innerHTML = ("More Info")
+    // fullDeets.style.visibility = "hidden";
 
     //if clicked takes them to the plays detailed page
-    fullDeets.addEventListener("click", (event) => {
-      const pageRef = "pages/" + play.title + ".html"
-      window.location.href = pageRef;
-      console.log("clicked to go to " + play.title2 + "'s page");
+    // fullDeets.addEventListener("click", (event) => {
+    //   const pageRef = "pages/" + play.title + ".html"
+    //   window.location.href = pageRef;
+    //   console.log("clicked to go to " + play.title2 + "'s page");
 
-    })
+    //  })
+
+        coverDiv.addEventListener("click", (event) => {
+          const pageRef = "pages/" + play.title + ".html";
+          window.location.href = pageRef;
+          console.log("clicked to go to " + play.title2 + "'s page");
+        });
+
+
 
 
     //adds all the elements together onto the playcard, and then to the playsDiv
     playCard.append(playTitle);
     playCard.append(coverDiv);
     coverDiv.append(coverImg);
-    descDiv.append(descP)
-    playCard.append(fullDeets)
-    playCard.append(descDiv);
+    // descDiv.append(descP)
+    // playCard.append(fullDeets)
+    // playCard.append(descDiv);
     playsDiv.append(playCard);
-    descDiv.style.visibility = "hidden";
+    // descDiv.style.visibility = "hidden";
 
     //give playcard the event listener to trigger the description showing when mouse is on card
-    playCard.addEventListener("mouseenter", (event) => {
-      //image opacity to 0 so you cna read desc
-      coverImg.style.opacity = "0%";
-      //shows the desc text
-      descDiv.style.visibility = "visible";
-      fullDeets.style.visibility = "visible"
-      //log to check
-      //console.log("hovered on " + play.title2);
-    });
+    // playCard.addEventListener("mouseenter", (event) => {
+    //   //image opacity to 0 so you cna read desc
+    //   coverImg.style.opacity = "0%";
+    //   //shows the desc text
+    //   descDiv.style.visibility = "visible";
+    //   fullDeets.style.visibility = "visible"
+    //   //log to check
+    //   //console.log("hovered on " + play.title2);
+    // });
 
-    //when the mouse leaves the playCard
-    playCard.addEventListener("mouseleave", (event) => {
-      //bring the opacity back up
-      coverImg.style.opacity = "100%";
-      //hide the desc
-      descDiv.style.visibility = "hidden";
-      fullDeets.style.visibility = "hidden"
-      //log to check
-      //console.log("mouse left " + play.title2);
-    });
+    // //when the mouse leaves the playCard
+    // playCard.addEventListener("mouseleave", (event) => {
+    //   //bring the opacity back up
+    //   coverImg.style.opacity = "100%";
+    //   //hide the desc
+    //   descDiv.style.visibility = "hidden";
+    //   fullDeets.style.visibility = "hidden"
+    //   //log to check
+    //   //console.log("mouse left " + play.title2);
+    // });
   });
 }
 

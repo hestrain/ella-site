@@ -183,7 +183,15 @@
     "status": "Work-in-progress",
     "ogDev": "Currently in development at the National Theatre School of Canada, dramaturgy by Jovanni Sy",
     "press": [],
-    "devHist": [],
+    "devHist": [{
+
+      "what":"Residency (one week)",
+      "where":"Banff Playwrights Lab, Banff Centre for Arts and Creativity",
+      "when":"May 2026",
+      "devTeam":[
+        "Dramaturgical support from faculty members Mike Payette and Colleen Murphy, plus many very helpful and inspiring conversations with other faculty and participants"
+      ]
+    }],
     "prodPhotos": []
   },
   {

@@ -149,6 +149,13 @@ width: 100%;
     min-height: 30px;
 }
 
+.support-logo{
+    max-height: 60px;
+}
+.support-company{
+    text-align: center;
+}
+
 /* mobile formatting */
 @media (max-width: 794px) {
     .columns {

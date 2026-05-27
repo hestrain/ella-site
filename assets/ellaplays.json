@@ -169,7 +169,19 @@
       }
     ],
     "press": [],
-    "prodPhotos": []
+    "prodPhotos": [],
+    "support":[
+      {
+        "copmany":"Playwrights Workshop Montreal",
+        "logo":"",
+        "website":"https://www.playwrights.ca/"
+      },
+      {
+        "copmany":"Canada Council of the Arts",
+        "logo":"../assets/photos/logos/CAC-lockup-EN-RGB-Black.svg",
+        "website":"https://canadacouncil.ca/"
+      }
+    ]
   },
   {
     "title": "fireproof",
@@ -189,7 +201,7 @@
       "where":"Banff Playwrights Lab, Banff Centre for Arts and Creativity",
       "when":"May 2026",
       "devTeam":[
-        "Dramaturgical support from faculty members Mike Payette and Colleen Murphy, plus many very helpful and inspiring conversations with other faculty and participants"
+        "Dramaturgical support from faculty members Mike Payette and Colleen Murphy, <a href=\"https://ent-nts.ca/en/banff-playwrights-lab/\">plus many very helpful and inspiring conversations with other faculty and participants</a>"
       ]
     }],
     "prodPhotos": []

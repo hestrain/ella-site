@@ -269,6 +269,31 @@ function createPage() {
       historyEl.append(eventEl);
     });
   }
+
+  //---------SUPPORT-----------------------------
+  if (thisPlay.support.length >0) {
+    let supportEl = document.createElement("div")
+    let supportH = document.createElement("h3")
+    supportH.innerHTML = "<br>Supported by:<br>"
+    supportEl.append(supportH)
+    thisPlay.support.forEach((supporter) => {
+
+      let aCompany = document.createElement("div")
+      let supporterName = document.createElement("a")
+      // supporterName.innerHTML = supporter.copmany
+      supporterName.href = supporter.website
+
+
+      let supporterLogo = document.createElement("img")
+      supporterLogo.src = supporter.logo
+supporterLogo.setAttribute("class","support-logo spec-photos prod-pic")
+supporterName.setAttribute("class","support-company")
+      supporterName.append(supporterLogo)
+      aCompany.append(supporterName)
+      supportEl.append(aCompany)
+    })
+    rightCol.append(supportEl)
+  }
   
   const spacerElL = document.createElement("div");
   spacerElL.setAttribute("class", "spec-spacer");

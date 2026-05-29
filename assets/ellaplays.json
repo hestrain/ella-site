@@ -94,7 +94,8 @@
         "kind": "l",
         "credit": ""
       }
-    ]
+    ],
+    "support":[]
   },
   {
     "title": "wolf",
@@ -195,16 +196,18 @@
     "status": "Work-in-progress",
     "ogDev": "Currently in development at the National Theatre School of Canada, dramaturgy by Jovanni Sy",
     "press": [],
-    "devHist": [{
-
-      "what":"Residency (one week)",
-      "where":"Banff Playwrights Lab, Banff Centre for Arts and Creativity",
-      "when":"May 2026",
-      "devTeam":[
-        "Dramaturgical support from faculty members Mike Payette and Colleen Murphy, <a href=\"https://ent-nts.ca/en/banff-playwrights-lab/\">plus many very helpful and inspiring conversations with other faculty and participants</a>"
-      ]
-    }],
-    "prodPhotos": []
+    "devHist": [
+      {
+        "what": "Residency (one week)",
+        "where": "Banff Playwrights Lab, Banff Centre for Arts and Creativity",
+        "when": "May 2026",
+        "devTeam": [
+          "Dramaturgical support from faculty members Mike Payette and Colleen Murphy, <a href=\"https://ent-nts.ca/en/banff-playwrights-lab/\">plus many very helpful and inspiring conversations with other faculty and participants</a>"
+        ]
+      }
+    ],
+    "prodPhotos": [],
+    "support": []
   },
   {
     "title": "beccablob",
@@ -226,7 +229,8 @@
       }
     ],
     "press": [],
-    "prodPhotos": []
+    "prodPhotos": [],
+    "support": []
   },
   {
     "title": "caretake",
@@ -257,9 +261,13 @@
       {
         "url": "https://theatrebc.org/canadian-playwriting-competition-2022",
         "linkText": "One Act Play Winner, Theatre BC 2025 Canadian Playwriting Competition",
-        "quotes":["\"A polished script with sparkling, believable dialogue. Nothing is resolved but we are left thinking about it long after the play is done.\"", "\"Great, original, crystal clear characters ... Brilliant slice of a family life and helping each other get through the hard moments. Effortlessly builds the bigger picture of their world without being obvious.\" - Juror, Theatre BC"]
+        "quotes": [
+          "\"A polished script with sparkling, believable dialogue. Nothing is resolved but we are left thinking about it long after the play is done.\"",
+          "\"Great, original, crystal clear characters ... Brilliant slice of a family life and helping each other get through the hard moments. Effortlessly builds the bigger picture of their world without being obvious.\" - Juror, Theatre BC"
+        ]
       }
     ],
-    "prodPhotos": []
+    "prodPhotos": [],
+    "support": []
   }
 ]

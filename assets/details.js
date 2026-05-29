@@ -271,12 +271,16 @@ function createPage() {
   }
 
   //---------SUPPORT-----------------------------
-  if (thisPlay.support.length >0) {
+
+  let supporters = thisPlay.support
+  console.log(supporters);
+  
+  if (supporters.length > 0) {
     let supportEl = document.createElement("div")
     let supportH = document.createElement("h3")
     supportH.innerHTML = "<br>Supported by:<br>"
     supportEl.append(supportH)
-    thisPlay.support.forEach((supporter) => {
+    supporters.forEach((supporter) => {
 
       let aCompany = document.createElement("div")
       let supporterName = document.createElement("a")

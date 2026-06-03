@@ -149,8 +149,16 @@ width: 100%;
     min-height: 30px;
 }
 
+.logo-zone{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+}
+
 .support-logo{
-    max-height: 60px;
+    max-width: 300px;
+    min-width: 200px;
 }
 .support-company{
     text-align: center;
@@ -180,6 +188,10 @@ width: 100%;
     .project-right {
         width: 100%;
         margin: auto;
+    }
+
+    .logo-zone{
+        flex-direction: column;
     }
 
 

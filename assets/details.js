@@ -280,6 +280,8 @@ function createPage() {
     let supportH = document.createElement("h3")
     supportH.innerHTML = "<br>Supported by:<br>"
     supportEl.append(supportH)
+    let logosEl = document.createElement("div")
+    logosEl.setAttribute("class", "logo-zone")
     supporters.forEach((supporter) => {
 
       let aCompany = document.createElement("div")
@@ -294,8 +296,9 @@ supporterLogo.setAttribute("class","support-logo spec-photos prod-pic")
 supporterName.setAttribute("class","support-company")
       supporterName.append(supporterLogo)
       aCompany.append(supporterName)
-      supportEl.append(aCompany)
+      logosEl.append(aCompany)
     })
+    supportEl.append(logosEl)
     rightCol.append(supportEl)
   }
   
